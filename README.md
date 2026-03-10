@@ -43,6 +43,8 @@ _The repo includes JavaScript and Solidity reference implementations, a shared R
 
 </details>
 
+_This repository does not include a public testnet deployment. Public faucet access to testnet ETH was not reliable enough for a repeatable deployment workflow, so EVM validation was performed on the local Hardhat network._
+
 ## Table of Contents
 
 - [Requirements](#requirements)
