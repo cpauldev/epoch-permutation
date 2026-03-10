@@ -1,28 +1,48 @@
 # Starknet Implementation
 
-This directory contains the Cairo/Starknet port of Epoch Permutation.
+## Scope
 
-## Requirements
-
-- Node.js and npm
-- `npm install`
-- `scarb`
-- `snforge`
+This directory contains the Cairo/Starknet contract implementation of Epoch
+Permutation.
 
 ## Layout
 
-- `Scarb.toml`: package manifest
-- `Scarb.lock`: resolved toolchain dependencies
-- `src/lib.cairo`: implementation and inline tests
+| Path            | Verified purpose                                    |
+| --------------- | --------------------------------------------------- |
+| `Scarb.toml`    | Package manifest and contract target configuration. |
+| `Scarb.lock`    | Resolved Scarb dependencies.                        |
+| `src/lib.cairo` | Contract, helper functions, and inline unit tests.  |
+
+## Requirements
+
+| Requirement     | Notes                                                |
+| --------------- | ---------------------------------------------------- |
+| Node.js and npm | Required for the root `npm run starknet:*` commands. |
+| `npm install`   | Installs the repo dependencies and wrappers.         |
+| `scarb`         | Required for the build command.                      |
+| `snforge`       | Required for the test command.                       |
+
+## Public Surface
+
+| Surface     | Entry points                                                                                 |
+| ----------- | -------------------------------------------------------------------------------------------- |
+| Constructor | `constructor`                                                                                |
+| ABI methods | `get_next_permuted_value`, `view_permutation`, `get_current_epoch_info`, `get_configuration` |
+| Events      | `EpochSeedRotated`, `PermutationExecuted`                                                    |
 
 ## Commands
 
-- `npm run starknet:build`
-- `npm run starknet:test`
+Run these commands from the repository root.
 
-## Notes
+| Command                  | Verified behavior                                                      |
+| ------------------------ | ---------------------------------------------------------------------- |
+| `npm run starknet:build` | Runs `scarb build` through `implementations/tooling/runExternal.cjs`.  |
+| `npm run starknet:test`  | Runs `snforge test` through `implementations/tooling/runExternal.cjs`. |
 
-- Run the commands in this guide from the repository root.
-- Use `snforge test` for the local test path.
-- The contract derives its entropy inputs from Starknet runtime values such as block number, block timestamp, caller address, contract address, and chain id.
-- Scarb and Starknet Foundry write build and cache output under their standard working directories.
+## Implementation Notes
+
+| Topic            | Verified detail                                                                                                            |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Entropy handling | Deployment-time entropy and generation-time entropy are assembled from separate Starknet runtime helpers in the same file. |
+| Test location    | Tests are inline `#[cfg(test)]` unit tests in `src/lib.cairo`.                                                             |
+| Build outputs    | `Scarb.toml` enables both Sierra and CASM outputs under `[[target.starknet-contract]]`.                                    |

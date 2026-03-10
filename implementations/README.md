@@ -1,35 +1,44 @@
 # Implementation Matrix
 
-This directory is the canonical source/test/command map for every target in the repository.
+## Scope
 
-The repository standardizes at the implementation-directory level, not by forcing identical internal layouts. Each target keeps the structure expected by its native toolchain.
+This directory contains the target-specific implementations and the tooling
+wrappers used by the root `npm run <scope>:<action>` commands.
 
 ## Repository Policy
 
-- Every implementation keeps its own local `README.md`.
-- Source files stay in the native toolchain layout.
-- Tests stay where the native toolchain expects them.
-- Helper runners live under local `scripts/` directories when needed.
-- Repo-level documentation asset entrypoints live under `scripts/docs/`.
-- Generated output is not treated as source.
-- Repo-wide orchestration commands use `repo:*`; implementation commands use `<scope>:<action>[:<variant>]`.
+| Policy           | Verified rule                                                                       |
+| ---------------- | ----------------------------------------------------------------------------------- |
+| Local docs       | Each target keeps a local `README.md`.                                              |
+| Source layout    | Source files stay in the layout expected by the target toolchain.                   |
+| Test layout      | Tests stay in the location expected by the target toolchain.                        |
+| Helper runners   | Target-specific helper runners live under local `scripts/` directories when needed. |
+| Docs renderers   | Repo-level documentation renderers live under `scripts/docs/`.                      |
+| Generated output | Generated output is not treated as source.                                          |
 
-## Source and Test Map
+## Target Map
 
-| Target     | Primary source path              | Test location                                          | Test style                                                                   | Main commands                                                                                      |
-| ---------- | -------------------------------- | ------------------------------------------------------ | ---------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| EVM        | `implementations/evm/contracts/` | `implementations/evm/test/`                            | Hardhat unit tests plus a local harness verification runner                  | `npm run evm:test`, `npm run evm:test:unit`, `npm run evm:test:local`, `npm run evm:benchmark:gas` |
-| JavaScript | `implementations/js/src/`        | `implementations/js/scripts/rngStress.cjs`             | stress-based test runner plus repo-level docs renderers backed by JS helpers | `npm run js:test`, `npm run js:chart:scatter`                                                      |
-| Rust       | `implementations/rust/*/src/`    | inline `#[cfg(test)]` modules in each crate            | crate-local unit tests                                                       | `npm run rust:test`, `npm run rust:check`                                                          |
-| Aptos      | `implementations/aptos/sources/` | inline `#[test]` functions in `epoch_permutation.move` | Move unit tests                                                              | `npm run aptos:compile`, `npm run aptos:test`                                                      |
-| Starknet   | `implementations/starknet/src/`  | inline `mod tests` in `lib.cairo`                      | Cairo `snforge` tests                                                        | `npm run starknet:build`, `npm run starknet:test`                                                  |
-| Sui        | `implementations/sui/sources/`   | inline `#[test]` functions in `epoch_permutation.move` | Move unit tests                                                              | `npm run sui:build`, `npm run sui:test`                                                            |
+| Target     | Primary source path              | Test location                                                                                  | Local README                         |
+| ---------- | -------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------ |
+| EVM        | `implementations/evm/contracts/` | `implementations/evm/test/` plus `implementations/evm/scripts/localPermutationVerification.ts` | `implementations/evm/README.md`      |
+| JavaScript | `implementations/js/src/`        | `implementations/js/scripts/rngStress.cjs`                                                     | `implementations/js/README.md`       |
+| Rust       | `implementations/rust/*/src/`    | inline `#[cfg(test)]` modules in each crate                                                    | `implementations/rust/README.md`     |
+| Aptos      | `implementations/aptos/sources/` | inline `#[test]` functions in `epoch_permutation.move`                                         | `implementations/aptos/README.md`    |
+| Starknet   | `implementations/starknet/src/`  | inline `#[cfg(test)]` unit tests in `lib.cairo`                                                | `implementations/starknet/README.md` |
+| Sui        | `implementations/sui/sources/`   | inline `#[test]` functions in `epoch_permutation.move`                                         | `implementations/sui/README.md`      |
+
+## Tooling Notes
+
+`implementations/tooling/runExternal.cjs` is the shared wrapper for the root
+Aptos, Starknet, and Sui commands. `implementations/rust/scripts/runCargo.cjs`
+is the Rust wrapper. Hardhat path configuration for the EVM implementation is
+defined at the repository root in `hardhat.config.ts`.
 
 ## Choosing Where to Work
 
-- If you are changing the Solidity reference or its benchmarking surface, start in `implementations/evm/`.
-- If you are verifying algorithm behavior off-chain, start in `implementations/js/`. If you are regenerating README assets, start in `scripts/docs/` and follow the implementation-specific helpers from there.
-- If you are porting shared logic into Rust-based runtimes, start in `implementations/rust/`.
-- If you are touching a chain-specific port, use that implementation's local README and preserve the host-toolchain layout.
-
-The root README explains repo-wide behavior, command orchestration, and generated-artifact policy. Local READMEs should only carry the runtime-specific deltas.
+| Area                       | Start here when                                                                                                                   |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| `implementations/evm/`     | You are changing the Solidity implementation, harnesses, or benchmark contracts.                                                  |
+| `implementations/js/`      | You are verifying off-chain behavior or updating the JS-backed documentation assets.                                              |
+| `implementations/rust/`    | You are changing the shared Rust core or the Solana and CosmWasm adapters.                                                        |
+| Chain-specific directories | You are changing Aptos, Starknet, or Sui behavior and need to preserve the host-toolchain layout from that target's local README. |

@@ -198,13 +198,13 @@ ${tableRows}
 ## Rerun
 
 \`\`\`bash
-npm run benchmark:gas
+npm run evm:benchmark:gas
 \`\`\`
 
 To change the benchmark configuration:
 
 \`\`\`bash
-npm run benchmark:gas -- --range ${config.range} --runs ${config.runs} --bins ${config.bins}
+npm run evm:benchmark:gas -- --range ${config.range} --runs ${config.runs} --bins ${config.bins}
 \`\`\`
 `;
 }
