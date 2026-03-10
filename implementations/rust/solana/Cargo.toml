@@ -1,0 +1,9 @@
+[package]
+name = "epoch-permutation-solana"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+borsh = { version = "1.6", features = ["derive"] }
+epoch-permutation-core = { path = "../core", features = ["borsh"] }

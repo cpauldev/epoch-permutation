@@ -1,0 +1,15 @@
+node_modules
+dist
+build
+cache
+artifacts
+typechain-types
+implementations/evm/typechain-types
+implementations/rust/**/target
+results
+*.lock
+*.log
+*.tsbuildinfo
+.DS_Store
+.git
+.config/.husky/_

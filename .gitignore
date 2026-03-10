@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build and compiler outputs
+build/
+dist/
+cache/
+artifacts/
+typechain-types/
+implementations/evm/typechain-types/
+implementations/aptos/.aptos/
+implementations/aptos/build/
+implementations/rust/**/target/
+implementations/starknet/.scarb/
+implementations/starknet/.snfoundry_cache/
+implementations/starknet/snfoundry_trace/
+implementations/starknet/target/
+implementations/sui/build/
+results/
+gas-report.txt
+
+# Testing
+coverage/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment
+.env
+.env.*
+
+# IDEs
+.vscode/
+.claude/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*

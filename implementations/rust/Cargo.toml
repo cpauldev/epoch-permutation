@@ -1,0 +1,3 @@
+[workspace]
+members = ["core", "solana", "cosmwasm"]
+resolver = "2"

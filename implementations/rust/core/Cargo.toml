@@ -1,0 +1,16 @@
+[package]
+name = "epoch-permutation-core"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[features]
+default = []
+serde = ["dep:serde"]
+borsh = ["dep:borsh"]
+
+[dependencies]
+borsh = { version = "1.6", features = ["derive"], optional = true }
+primitive-types = { version = "0.14", default-features = false }
+serde = { version = "1.0", features = ["derive"], optional = true }
+sha3 = "0.10"

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="3220" viewBox="0 0 1220 3220" role="img" aria-labelledby="title desc" style="font-family: Arial, Helvetica, sans-serif;">
+  <title>Epoch Permutation flow</title>
+  <desc>Top: sequence generation flow. Bottom: the shared Feistel primitive used in both highlighted stages.</desc>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 8 4 L 0 8 z" fill="#64748b" />
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.07" />
+    </filter>
+  </defs>
+  <rect width="1220" height="3220" fill="#ffffff" />
+  <text x="610" y="58" text-anchor="middle" font-size="34" font-weight="700" fill="#0f172a">Epoch Permutation flow</text>
+  <text x="610" y="92" text-anchor="middle" font-size="18" fill="#475569">Top: sequence generation flow. Bottom: the shared Feistel primitive used in both highlighted stages.</text>
+  
+    
+    <rect x="96" y="126" width="22" height="22" rx="7" fill="#e0f2fe" stroke="#0284c7" stroke-width="2" />
+    <text x="130" y="142" font-size="16" font-weight="600" fill="#475569">Decision</text>
+  
+    <rect x="288" y="126" width="22" height="22" rx="7" fill="#ede9fe" stroke="#7c3aed" stroke-width="2" />
+    <text x="322" y="142" font-size="16" font-weight="600" fill="#475569">Path label</text>
+  
+    <rect x="508" y="126" width="22" height="22" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="2" />
+    <text x="542" y="142" font-size="16" font-weight="600" fill="#475569">Yes / No</text>
+  
+    <rect x="700" y="126" width="22" height="22" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="2" />
+    <text x="734" y="142" font-size="16" font-weight="600" fill="#475569">Feistel stage</text>
+  
+    <rect x="928" y="126" width="22" height="22" rx="7" fill="#dcfce7" stroke="#16a34a" stroke-width="2" />
+    <text x="962" y="142" font-size="16" font-weight="600" fill="#475569">Returned output</text>
+  
+    
+    <rect x="60" y="186" width="1100" height="1820" rx="30" fill="#ffffff" stroke="#e2e8f0" stroke-width="2.5" />
+    <text x="100" y="238" text-anchor="start" font-size="28" font-weight="700" fill="#0f172a">Sequence generation flow</text>
+    <text x="100" y="272" text-anchor="start" font-size="18" font-weight="400" fill="#475569">Stateful generation and read-only lookup share the same two-stage mapping.</text>
+  
+    
+    <rect x="460" y="320" width="300" height="76" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="610" y="358" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="610" dy="0">Read sequence index</tspan></text>
+  
+    <rect x="400" y="438" width="420" height="92" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="610" y="484" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="610" dy="-11.5">Compute epoch index</tspan><tspan x="610" dy="23">and in-epoch position</tspan></text>
+  
+    <polygon points="610,579 750,640 610,701 470,640" fill="#e0f2fe" stroke="#0284c7" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="610" y="640" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="610" dy="-11.5">Stateful or</tspan><tspan x="610" dy="23">read-only?</tspan></text>
+  
+    <rect x="300" y="778" width="180" height="52" rx="26" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="390" y="804" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="390" dy="0">Stateful</tspan></text>
+  
+    <rect x="845" y="778" width="190" height="52" rx="26" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="940" y="804" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="940" dy="0">Read-only</tspan></text>
+  
+    <polygon points="390,906 500,962 390,1018 280,962" fill="#e0f2fe" stroke="#0284c7" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="390" y="962" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="390" dy="-11.5">Start of a</tspan><tspan x="390" dy="23">new epoch?</tspan></text>
+  
+    <rect x="214" y="1010" width="72" height="38" rx="19" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="250" y="1029" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="250" dy="0">Yes</tspan></text>
+  
+    <rect x="498" y="1010" width="64" height="38" rx="19" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="530" y="1029" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="530" dy="0">No</tspan></text>
+  
+    <rect x="130" y="1100" width="240" height="80" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="250" y="1140" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="250" dy="-11.5">Rotate the current</tspan><tspan x="250" dy="23">epoch seed</tspan></text>
+  
+    <rect x="410" y="1100" width="240" height="80" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="530" y="1140" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="530" dy="-11.5">Reuse the current</tspan><tspan x="530" dy="23">epoch seed</tspan></text>
+  
+    <rect x="790" y="1100" width="300" height="80" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="940" y="1140" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="940" dy="-11.5">Resolve the seed for</tspan><tspan x="940" dy="23">the read-only path</tspan></text>
+  
+    <rect x="460" y="1272" width="300" height="80" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="610" y="1312" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="610" dy="-11.5">Compute actual</tspan><tspan x="610" dy="23">epoch size</tspan></text>
+  
+    <rect x="430" y="1424" width="360" height="104" rx="18" fill="#fef3c7" stroke="#d97706" stroke-width="3" filter="url(#shadow)" />
+    <text x="610" y="1476" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="610" dy="-11.5">Epoch-local</tspan><tspan x="610" dy="23">Feistel permutation</tspan></text>
+  
+    <rect x="490" y="1600" width="240" height="80" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="610" y="1640" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="610" dy="-11.5">Add the epoch</tspan><tspan x="610" dy="23">offset</tspan></text>
+  
+    <rect x="430" y="1748" width="360" height="104" rx="18" fill="#fef3c7" stroke="#d97706" stroke-width="3" filter="url(#shadow)" />
+    <text x="610" y="1800" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="610" dy="-11.5">Full-range</tspan><tspan x="610" dy="23">Feistel permutation</tspan></text>
+  
+    <rect x="510" y="1904" width="200" height="72" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="3" filter="url(#shadow)" />
+    <text x="610" y="1940" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="610" dy="0">Return value + 1</tspan></text>
+  
+    <path d="M 610 396 L 610 438" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 610 530 L 610 579" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 470 640 L 408 640 Q 390 640 390 658 L 390 778" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 750 640 L 922 640 Q 940 640 940 658 L 940 778" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 390 830 L 390 906" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 280 962 L 265 962 Q 250 962 250 977 L 250 1010" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 500 962 L 515 962 Q 530 962 530 977 L 530 1010" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 250 1048 L 250 1100" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 530 1048 L 530 1100" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 940 830 L 940 1100" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 250 1180 L 250 1210 Q 250 1228 268 1228 L 592 1228 Q 610 1228 610 1246 L 610 1272" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 530 1180 L 530 1210 Q 530 1228 548 1228 L 592 1228 Q 610 1228 610 1246 L 610 1272" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 940 1180 L 940 1210 Q 940 1228 922 1228 L 628 1228 Q 610 1228 610 1246 L 610 1272" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 610 1352 L 610 1424" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 610 1528 L 610 1600" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 610 1680 L 610 1748" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 610 1852 L 610 1904" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" />
+    
+    <rect x="60" y="2050" width="1100" height="1160" rx="30" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2.5" />
+    <text x="100" y="2102" text-anchor="start" font-size="28" font-weight="700" fill="#0f172a">Shared Feistel primitive</text>
+    <text x="100" y="2136" text-anchor="start" font-size="18" font-weight="400" fill="#475569">Both highlighted stages above call this same subroutine.</text>
+  
+    
+    <rect x="460" y="2178" width="300" height="76" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="610" y="2216" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="610" dy="0">Start with value x</tspan></text>
+  
+    <rect x="390" y="2300" width="440" height="96" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="610" y="2348" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="610" dy="-11.5">Choose a near-square grid</tspan><tspan x="610" dy="23">a × b that covers the range</tspan></text>
+  
+    <rect x="470" y="2448" width="280" height="76" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="610" y="2486" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="610" dy="-11.5">Decode x into</tspan><tspan x="610" dy="23">l and r</tspan></text>
+  
+    <rect x="330" y="2588" width="560" height="108" rx="18" fill="#fde68a" stroke="#b45309" stroke-width="3" filter="url(#shadow)" />
+    <text x="610" y="2642" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="610" dy="-23">For each round, hash the current</tspan><tspan x="610" dy="23">right side with the seed and round index,</tspan><tspan x="610" dy="23">then swap and mix</tspan></text>
+  
+    <rect x="420" y="2758" width="380" height="76" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="610" y="2796" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="610" dy="0">Re-encode the result into x</tspan></text>
+  
+    <polygon points="610,2899 730,2958 610,3017 490,2958" fill="#e0f2fe" stroke="#0284c7" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="610" y="2958" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="610" dy="-11.5">Is x inside</tspan><tspan x="610" dy="23">the range?</tspan></text>
+  
+    <rect x="360" y="2940" width="64" height="38" rx="19" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="392" y="2959" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="392" dy="0">No</tspan></text>
+  
+    <rect x="796" y="2940" width="72" height="38" rx="19" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="832" y="2959" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="832" dy="0">Yes</tspan></text>
+  
+    <rect x="732" y="3088" width="200" height="72" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="3" filter="url(#shadow)" />
+    <text x="832" y="3124" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="832" dy="0">Return x</tspan></text>
+  
+    <path d="M 610 2254 L 610 2300" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 610 2396 L 610 2448" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 610 2524 L 610 2588" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 610 2696 L 610 2758" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 610 2834 L 610 2899" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 490 2958 L 424 2958" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 730 2958 L 796 2958" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 832 2978 L 832 3088" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 360 2958 L 238 2958 Q 220 2958 220 2940 L 220 2234 Q 220 2216 238 2216 L 460 2216" fill="none" stroke="#64748b" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" />
+    <text x="112" y="2990" text-anchor="start" font-size="16" font-weight="600" fill="#475569">Cycle-walk if needed</text>
+  
+</svg>

@@ -1,0 +1,19 @@
+[package]
+name = "epoch-permutation-cosmwasm"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+cosmwasm-std = "3.0.4"
+cw-storage-plus = "3.0.1"
+epoch-permutation-core = { path = "../core", features = ["serde"] }
+schemars = "1.2.1"
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "2.0.18"
+
+[target.wasm32-unknown-unknown.dependencies]
+getrandom = { version = "0.4.2", features = ["wasm_js"] }

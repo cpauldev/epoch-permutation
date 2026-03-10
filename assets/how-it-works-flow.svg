@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="860" viewBox="0 0 1760 860" role="img" aria-labelledby="title desc">
+  <title>Epoch Permutation flow</title>
+  <desc>Stateful generation and read-only lookup share the same two-stage mapping.</desc>
+  <defs>
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#64748b" />
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.08" />
+    </filter>
+  </defs>
+  <rect width="1760" height="860" fill="#ffffff" />
+  <text x="880" y="58" text-anchor="middle" font-size="34" font-weight="700" fill="#0f172a">Epoch Permutation flow</text>
+  <text x="880" y="92" text-anchor="middle" font-size="18" fill="#475569">Stateful generation and read-only lookup share the same two-stage mapping.</text>
+  
+    
+    <rect x="110" y="126" width="22" height="22" rx="7" fill="#e0f2fe" stroke="#0284c7" stroke-width="2" />
+    <text x="144" y="142" font-size="16" font-weight="600" fill="#475569">Decision</text>
+  
+    <rect x="300" y="126" width="22" height="22" rx="7" fill="#ede9fe" stroke="#7c3aed" stroke-width="2" />
+    <text x="334" y="142" font-size="16" font-weight="600" fill="#475569">Path label</text>
+  
+    <rect x="520" y="126" width="22" height="22" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="2" />
+    <text x="554" y="142" font-size="16" font-weight="600" fill="#475569">Yes / No</text>
+  
+    <rect x="710" y="126" width="22" height="22" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="2" />
+    <text x="744" y="142" font-size="16" font-weight="600" fill="#475569">Feistel stage</text>
+  
+    <rect x="950" y="126" width="22" height="22" rx="7" fill="#dcfce7" stroke="#16a34a" stroke-width="2" />
+    <text x="984" y="142" font-size="16" font-weight="600" fill="#475569">Returned output</text>
+  
+    
+    <rect x="60" y="220" width="180" height="72" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)" />
+    <text text-anchor="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="150" y="244.5">Read sequence</tspan><tspan x="150" y="267.5">index</tspan></text>
+  
+    
+    <rect x="300" y="210" width="240" height="92" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)" />
+    <text text-anchor="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="420" y="244.5">Compute epoch index</tspan><tspan x="420" y="267.5">and in-epoch position</tspan></text>
+  
+    
+    <polygon points="650,201 760,256 650,311 540,256" fill="#e0f2fe" stroke="#0284c7" stroke-width="2.5" filter="url(#shadow)" />
+    <text text-anchor="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="650" y="244.5">Stateful or</tspan><tspan x="650" y="267.5">read-only?</tspan></text>
+  
+    
+    <rect x="760" y="155" width="120" height="44" rx="22" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5" filter="url(#shadow)" />
+    <text text-anchor="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="820" y="177">Stateful</tspan></text>
+  
+    
+    <rect x="760" y="345" width="130" height="44" rx="22" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5" filter="url(#shadow)" />
+    <text text-anchor="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="825" y="367">Read-only</tspan></text>
+  
+    
+    <polygon points="1020,129 1125,179 1020,229 915,179" fill="#e0f2fe" stroke="#0284c7" stroke-width="2.5" filter="url(#shadow)" />
+    <text text-anchor="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="1020" y="167.5">Start of a</tspan><tspan x="1020" y="190.5">new epoch?</tspan></text>
+  
+    
+    <rect x="1135" y="112" width="72" height="38" rx="19" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5" filter="url(#shadow)" />
+    <text text-anchor="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="1171" y="131">Yes</tspan></text>
+  
+    
+    <rect x="1135" y="244" width="64" height="38" rx="19" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5" filter="url(#shadow)" />
+    <text text-anchor="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="1167" y="263">No</tspan></text>
+  
+    
+    <rect x="1220" y="76" width="230" height="64" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)" />
+    <text text-anchor="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="1335" y="96.5">Rotate the current</tspan><tspan x="1335" y="119.5">epoch seed</tspan></text>
+  
+    
+    <rect x="1220" y="216" width="230" height="64" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)" />
+    <text text-anchor="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="1335" y="236.5">Reuse the current</tspan><tspan x="1335" y="259.5">epoch seed</tspan></text>
+  
+    
+    <rect x="920" y="332" width="320" height="70" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)" />
+    <text text-anchor="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="1080" y="355.5">Resolve the read-only</tspan><tspan x="1080" y="378.5">epoch seed</tspan></text>
+  
+    
+    <rect x="560" y="620" width="220" height="76" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)" />
+    <text text-anchor="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="670" y="646.5">Compute actual</tspan><tspan x="670" y="669.5">epoch size</tspan></text>
+  
+    
+    <rect x="820" y="610" width="230" height="96" rx="18" fill="#fef3c7" stroke="#d97706" stroke-width="3" filter="url(#shadow)" />
+    <text text-anchor="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="935" y="646.5">Epoch-local</tspan><tspan x="935" y="669.5">Feistel permutation</tspan></text>
+  
+    
+    <rect x="1080" y="620" width="200" height="76" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)" />
+    <text text-anchor="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="1180" y="646.5">Add the epoch</tspan><tspan x="1180" y="669.5">offset</tspan></text>
+  
+    
+    <rect x="1310" y="610" width="220" height="96" rx="18" fill="#fef3c7" stroke="#d97706" stroke-width="3" filter="url(#shadow)" />
+    <text text-anchor="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="1420" y="646.5">Full-range</tspan><tspan x="1420" y="669.5">Feistel permutation</tspan></text>
+  
+    
+    <rect x="1560" y="620" width="150" height="76" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="3" filter="url(#shadow)" />
+    <text text-anchor="middle" font-size="18" font-weight="600" fill="#0f172a"><tspan x="1635" y="646.5">Return</tspan><tspan x="1635" y="669.5">value + 1</tspan></text>
+  
+    <path d="M 240 256 L 300 256" fill="none" stroke="#64748b" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 540 256 L 550 256" fill="none" stroke="#64748b" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 750 256 L 750 177 L 760 177" fill="none" stroke="#64748b" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 750 256 L 750 367 L 760 367" fill="none" stroke="#64748b" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 880 177 L 915 177" fill="none" stroke="#64748b" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 1125 179 L 1135 131" fill="none" stroke="#64748b" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 1125 179 L 1135 263" fill="none" stroke="#64748b" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 1207 131 L 1220 131" fill="none" stroke="#64748b" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 1199 263 L 1220 263" fill="none" stroke="#64748b" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 890 367 L 920 367" fill="none" stroke="#64748b" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 1335 140 L 1335 560 L 670 560 L 670 620" fill="none" stroke="#64748b" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 1335 280 L 1335 575 L 670 575 L 670 620" fill="none" stroke="#64748b" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 1080 402 L 1080 590 L 670 590 L 670 620" fill="none" stroke="#64748b" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 780 658 L 820 658" fill="none" stroke="#64748b" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 1050 658 L 1080 658" fill="none" stroke="#64748b" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 1280 658 L 1310 658" fill="none" stroke="#64748b" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" /><path d="M 1530 658 L 1560 658" fill="none" stroke="#64748b" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowhead)" />
+  
+</svg>

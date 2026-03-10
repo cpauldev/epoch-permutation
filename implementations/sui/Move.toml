@@ -1,0 +1,8 @@
+[package]
+name = "epoch_permutation_sui"
+version = "0.0.1"
+edition = "2024.beta"
+
+[addresses]
+epoch_permutation = "0x42"
+

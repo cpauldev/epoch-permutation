@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1720 3088" width="1720" height="3088" role="img" aria-labelledby="details-title details-subtitle" font-family="Arial, sans-serif">
+  <title id="details-title">Reference run metadata and epoch seeds</title>
+  <desc id="details-subtitle">Run parameters and per-epoch seed schedule for the example sequence shown in the overview chart.</desc>
+  <defs><clipPath id="summary-fixed-seed"><rect x="678" y="154" width="192" height="24" rx="0" ry="0" /></clipPath><clipPath id="summary-global-seed"><rect x="898" y="154" width="752" height="24" rx="0" ry="0" /></clipPath><clipPath id="seed-row-1"><rect x="610" y="265" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-2"><rect x="610" y="299" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-3"><rect x="610" y="333" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-4"><rect x="610" y="367" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-5"><rect x="610" y="401" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-6"><rect x="610" y="435" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-7"><rect x="610" y="469" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-8"><rect x="610" y="503" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-9"><rect x="610" y="537" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-10"><rect x="610" y="571" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-11"><rect x="610" y="605" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-12"><rect x="610" y="639" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-13"><rect x="610" y="673" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-14"><rect x="610" y="707" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-15"><rect x="610" y="741" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-16"><rect x="610" y="775" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-17"><rect x="610" y="809" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-18"><rect x="610" y="843" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-19"><rect x="610" y="877" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-20"><rect x="610" y="911" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-21"><rect x="610" y="945" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-22"><rect x="610" y="979" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-23"><rect x="610" y="1013" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-24"><rect x="610" y="1047" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-25"><rect x="610" y="1081" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-26"><rect x="610" y="1115" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-27"><rect x="610" y="1149" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-28"><rect x="610" y="1183" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-29"><rect x="610" y="1217" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-30"><rect x="610" y="1251" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-31"><rect x="610" y="1285" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-32"><rect x="610" y="1319" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-33"><rect x="610" y="1353" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-34"><rect x="610" y="1387" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-35"><rect x="610" y="1421" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-36"><rect x="610" y="1455" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-37"><rect x="610" y="1489" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-38"><rect x="610" y="1523" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-39"><rect x="610" y="1557" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-40"><rect x="610" y="1591" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-41"><rect x="610" y="1625" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-42"><rect x="610" y="1659" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-43"><rect x="610" y="1693" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-44"><rect x="610" y="1727" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-45"><rect x="610" y="1761" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-46"><rect x="610" y="1795" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-47"><rect x="610" y="1829" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-48"><rect x="610" y="1863" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-49"><rect x="610" y="1897" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-50"><rect x="610" y="1931" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-51"><rect x="610" y="1965" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-52"><rect x="610" y="1999" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-53"><rect x="610" y="2033" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-54"><rect x="610" y="2067" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-55"><rect x="610" y="2101" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-56"><rect x="610" y="2135" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-57"><rect x="610" y="2169" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-58"><rect x="610" y="2203" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-59"><rect x="610" y="2237" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-60"><rect x="610" y="2271" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-61"><rect x="610" y="2305" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-62"><rect x="610" y="2339" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-63"><rect x="610" y="2373" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-64"><rect x="610" y="2407" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-65"><rect x="610" y="2441" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-66"><rect x="610" y="2475" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-67"><rect x="610" y="2509" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-68"><rect x="610" y="2543" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-69"><rect x="610" y="2577" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-70"><rect x="610" y="2611" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-71"><rect x="610" y="2645" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-72"><rect x="610" y="2679" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-73"><rect x="610" y="2713" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-74"><rect x="610" y="2747" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-75"><rect x="610" y="2781" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-76"><rect x="610" y="2815" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-77"><rect x="610" y="2849" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-78"><rect x="610" y="2883" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-79"><rect x="610" y="2917" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-80"><rect x="610" y="2951" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-81"><rect x="610" y="2985" width="1040" height="22" rx="0" ry="0" /></clipPath><clipPath id="seed-row-82"><rect x="610" y="3019" width="1040" height="22" rx="0" ry="0" /></clipPath></defs>
+  <rect width="1720" height="3088" fill="#ffffff" />
+  <text x="56" y="46" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f172a">Reference Run Metadata and Epoch Seeds</text>
+  <text x="56" y="72" font-family="Arial, sans-serif" font-size="16" fill="#475569">Run parameters and per-epoch seed schedule for the example sequence shown in the overview chart.</text>
+  <g>
+      <g>
+    <rect x="56" y="110" width="1608" height="80" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+    <rect x="56" y="110" width="1608" height="34" fill="#f8fafc" />
+    <line x1="56" y1="144" x2="1664" y2="144" stroke="#cbd5e1" stroke-width="1" />
+    <line x1="196" y1="110" x2="196" y2="190" stroke="#cbd5e1" stroke-width="1" /><line x1="336" y1="110" x2="336" y2="190" stroke="#cbd5e1" stroke-width="1" /><line x1="476" y1="110" x2="476" y2="190" stroke="#cbd5e1" stroke-width="1" /><line x1="664" y1="110" x2="664" y2="190" stroke="#cbd5e1" stroke-width="1" /><line x1="884" y1="110" x2="884" y2="190" stroke="#cbd5e1" stroke-width="1" />
+  </g>
+      <text x="70" y="132" font-size="14" font-weight="700" fill="#0f172a">Generated values</text><text x="210" y="132" font-size="14" font-weight="700" fill="#0f172a">Epoch size</text><text x="350" y="132" font-size="14" font-weight="700" fill="#0f172a">Epoch count</text><text x="490" y="132" font-size="14" font-weight="700" fill="#0f172a">Detected duplicates</text><text x="678" y="132" font-size="14" font-weight="700" fill="#0f172a">Fixed seed</text><text x="898" y="132" font-size="14" font-weight="700" fill="#0f172a">Global seed</text>
+      <text x="182" y="173" text-anchor="end" font-size="15" fill="#0f172a">25,000</text><text x="322" y="173" text-anchor="end" font-size="15" fill="#0f172a">307</text><text x="462" y="173" text-anchor="end" font-size="15" fill="#0f172a">82</text><text x="650" y="173" text-anchor="end" font-size="15" fill="#0f172a">0</text><text x="678" y="173" text-anchor="start" font-size="14" fill="#0f172a" clip-path="url(#summary-fixed-seed)" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace">0x1</text><text x="898" y="173" text-anchor="start" font-size="14" fill="#0f172a" clip-path="url(#summary-global-seed)" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace">0x91e902d37634247a9becead316364c13e3c0a75f9977ad3b31316e9641f50b94</text>
+    </g>
+  <g>
+    <rect x="56" y="218" width="1608" height="2828" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+    <rect x="56" y="218" width="1608" height="40" fill="#f8fafc" />
+    <line x1="56" y1="258" x2="1664" y2="258" stroke="#cbd5e1" stroke-width="1" />
+    <line x1="236" y1="218" x2="236" y2="3046" stroke="#cbd5e1" stroke-width="1" /><line x1="416" y1="218" x2="416" y2="3046" stroke="#cbd5e1" stroke-width="1" /><line x1="596" y1="218" x2="596" y2="3046" stroke="#cbd5e1" stroke-width="1" />
+  </g>
+  <text x="72" y="243" font-size="15" font-weight="700" fill="#0f172a">Epoch</text>
+  <text x="400" y="243" text-anchor="end" font-size="15" font-weight="700" fill="#0f172a">Start index</text>
+  <text x="580" y="243" text-anchor="end" font-size="15" font-weight="700" fill="#0f172a">End index</text>
+  <text x="1650" y="243" text-anchor="end" font-size="15" font-weight="700" fill="#0f172a">Seed</text>
+  <g>
+        <rect x="57" y="258" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="292" x2="1663" y2="292" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="280" font-size="15" fill="#0f172a">Epoch 1</text>
+        <text x="400" y="280" text-anchor="end" font-size="15" fill="#0f172a">0</text>
+        <text x="580" y="280" text-anchor="end" font-size="15" fill="#0f172a">306</text>
+        <text x="1650" y="280" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-1)">0x083e1ff5520505ad1dafe6b76d78e75d8270f2987bf9fafb85c45a505f3b5094</text>
+      </g><g>
+        <rect x="57" y="292" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="326" x2="1663" y2="326" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="314" font-size="15" fill="#0f172a">Epoch 2</text>
+        <text x="400" y="314" text-anchor="end" font-size="15" fill="#0f172a">307</text>
+        <text x="580" y="314" text-anchor="end" font-size="15" fill="#0f172a">613</text>
+        <text x="1650" y="314" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-2)">0xc0c185a5fae6f7ef003a33fda0734e818ea123d97c005035d9fbce492d47dfe0</text>
+      </g><g>
+        <rect x="57" y="326" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="360" x2="1663" y2="360" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="348" font-size="15" fill="#0f172a">Epoch 3</text>
+        <text x="400" y="348" text-anchor="end" font-size="15" fill="#0f172a">614</text>
+        <text x="580" y="348" text-anchor="end" font-size="15" fill="#0f172a">920</text>
+        <text x="1650" y="348" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-3)">0xa2fb9b15a11497a24264017e94c277a197f21fbc5b8c13c13f9b845c1d08fb39</text>
+      </g><g>
+        <rect x="57" y="360" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="394" x2="1663" y2="394" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="382" font-size="15" fill="#0f172a">Epoch 4</text>
+        <text x="400" y="382" text-anchor="end" font-size="15" fill="#0f172a">921</text>
+        <text x="580" y="382" text-anchor="end" font-size="15" fill="#0f172a">1,227</text>
+        <text x="1650" y="382" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-4)">0xceb98d2ca8fb56b554af32e16777f764c6a90d35c7728bfdcc31168927304e43</text>
+      </g><g>
+        <rect x="57" y="394" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="428" x2="1663" y2="428" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="416" font-size="15" fill="#0f172a">Epoch 5</text>
+        <text x="400" y="416" text-anchor="end" font-size="15" fill="#0f172a">1,228</text>
+        <text x="580" y="416" text-anchor="end" font-size="15" fill="#0f172a">1,534</text>
+        <text x="1650" y="416" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-5)">0xa28d42403a1dfe9cc47ac665ad909800fa8152b44d98080ad18df6df2ee90114</text>
+      </g><g>
+        <rect x="57" y="428" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="462" x2="1663" y2="462" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="450" font-size="15" fill="#0f172a">Epoch 6</text>
+        <text x="400" y="450" text-anchor="end" font-size="15" fill="#0f172a">1,535</text>
+        <text x="580" y="450" text-anchor="end" font-size="15" fill="#0f172a">1,841</text>
+        <text x="1650" y="450" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-6)">0x01b4a8aa22cb5b6c8db881ec59fdafb9cb6f79da84260a8ce0c6259aafcb1a00</text>
+      </g><g>
+        <rect x="57" y="462" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="496" x2="1663" y2="496" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="484" font-size="15" fill="#0f172a">Epoch 7</text>
+        <text x="400" y="484" text-anchor="end" font-size="15" fill="#0f172a">1,842</text>
+        <text x="580" y="484" text-anchor="end" font-size="15" fill="#0f172a">2,148</text>
+        <text x="1650" y="484" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-7)">0xeb7cfc149115bd9be0ac75200bfd97c095cfd10b99b6fe003b6789bb981d90be</text>
+      </g><g>
+        <rect x="57" y="496" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="530" x2="1663" y2="530" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="518" font-size="15" fill="#0f172a">Epoch 8</text>
+        <text x="400" y="518" text-anchor="end" font-size="15" fill="#0f172a">2,149</text>
+        <text x="580" y="518" text-anchor="end" font-size="15" fill="#0f172a">2,455</text>
+        <text x="1650" y="518" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-8)">0xbbeffe90fac8daf8d20076ffde879b1ce471a78a142822ac101ddbeb68529006</text>
+      </g><g>
+        <rect x="57" y="530" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="564" x2="1663" y2="564" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="552" font-size="15" fill="#0f172a">Epoch 9</text>
+        <text x="400" y="552" text-anchor="end" font-size="15" fill="#0f172a">2,456</text>
+        <text x="580" y="552" text-anchor="end" font-size="15" fill="#0f172a">2,762</text>
+        <text x="1650" y="552" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-9)">0xf12464465c9f927095c2c6d621d16fa9d667d230783db1522e6c8e481f70f3bb</text>
+      </g><g>
+        <rect x="57" y="564" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="598" x2="1663" y2="598" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="586" font-size="15" fill="#0f172a">Epoch 10</text>
+        <text x="400" y="586" text-anchor="end" font-size="15" fill="#0f172a">2,763</text>
+        <text x="580" y="586" text-anchor="end" font-size="15" fill="#0f172a">3,069</text>
+        <text x="1650" y="586" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-10)">0x314821a87863f1df1f566c07ad517b17721fd23dfdbdfa95c49df7406752a523</text>
+      </g><g>
+        <rect x="57" y="598" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="632" x2="1663" y2="632" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="620" font-size="15" fill="#0f172a">Epoch 11</text>
+        <text x="400" y="620" text-anchor="end" font-size="15" fill="#0f172a">3,070</text>
+        <text x="580" y="620" text-anchor="end" font-size="15" fill="#0f172a">3,376</text>
+        <text x="1650" y="620" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-11)">0xad97a8b83aa666a75dfcdfeec176f400efc72e2dc1d4f8154699d0ffe1123743</text>
+      </g><g>
+        <rect x="57" y="632" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="666" x2="1663" y2="666" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="654" font-size="15" fill="#0f172a">Epoch 12</text>
+        <text x="400" y="654" text-anchor="end" font-size="15" fill="#0f172a">3,377</text>
+        <text x="580" y="654" text-anchor="end" font-size="15" fill="#0f172a">3,683</text>
+        <text x="1650" y="654" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-12)">0xe1057be7c7f018fc91bc83157920530da416a090078247eed621f005fb09c2c3</text>
+      </g><g>
+        <rect x="57" y="666" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="700" x2="1663" y2="700" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="688" font-size="15" fill="#0f172a">Epoch 13</text>
+        <text x="400" y="688" text-anchor="end" font-size="15" fill="#0f172a">3,684</text>
+        <text x="580" y="688" text-anchor="end" font-size="15" fill="#0f172a">3,990</text>
+        <text x="1650" y="688" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-13)">0xbd53efe2c0405ae7293fa2a7fed24bc89d334de6cdd0d014f383889e094a1431</text>
+      </g><g>
+        <rect x="57" y="700" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="734" x2="1663" y2="734" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="722" font-size="15" fill="#0f172a">Epoch 14</text>
+        <text x="400" y="722" text-anchor="end" font-size="15" fill="#0f172a">3,991</text>
+        <text x="580" y="722" text-anchor="end" font-size="15" fill="#0f172a">4,297</text>
+        <text x="1650" y="722" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-14)">0x68e5d2e62fcd6cd7da4abf960943585f1a92b58508317a98b1f304f178cb499e</text>
+      </g><g>
+        <rect x="57" y="734" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="768" x2="1663" y2="768" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="756" font-size="15" fill="#0f172a">Epoch 15</text>
+        <text x="400" y="756" text-anchor="end" font-size="15" fill="#0f172a">4,298</text>
+        <text x="580" y="756" text-anchor="end" font-size="15" fill="#0f172a">4,604</text>
+        <text x="1650" y="756" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-15)">0x64ddeac3cbe1670cd48bb7de5f9781f53139d15e87e950e3eddb9bb35251fbbc</text>
+      </g><g>
+        <rect x="57" y="768" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="802" x2="1663" y2="802" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="790" font-size="15" fill="#0f172a">Epoch 16</text>
+        <text x="400" y="790" text-anchor="end" font-size="15" fill="#0f172a">4,605</text>
+        <text x="580" y="790" text-anchor="end" font-size="15" fill="#0f172a">4,911</text>
+        <text x="1650" y="790" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-16)">0x18029d56a0baa4c244dd29d88ca3b8a5b23dbb54104d6c1386957979c7a6c1bc</text>
+      </g><g>
+        <rect x="57" y="802" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="836" x2="1663" y2="836" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="824" font-size="15" fill="#0f172a">Epoch 17</text>
+        <text x="400" y="824" text-anchor="end" font-size="15" fill="#0f172a">4,912</text>
+        <text x="580" y="824" text-anchor="end" font-size="15" fill="#0f172a">5,218</text>
+        <text x="1650" y="824" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-17)">0xf6b174ad73fe607a3088e5f907e82d275dc22bde5da4eb609a519cfb6061369e</text>
+      </g><g>
+        <rect x="57" y="836" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="870" x2="1663" y2="870" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="858" font-size="15" fill="#0f172a">Epoch 18</text>
+        <text x="400" y="858" text-anchor="end" font-size="15" fill="#0f172a">5,219</text>
+        <text x="580" y="858" text-anchor="end" font-size="15" fill="#0f172a">5,525</text>
+        <text x="1650" y="858" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-18)">0xfd8a08b6d8e64271975bb08c38f04262889e5077d6fe8648f226dde55312ba74</text>
+      </g><g>
+        <rect x="57" y="870" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="904" x2="1663" y2="904" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="892" font-size="15" fill="#0f172a">Epoch 19</text>
+        <text x="400" y="892" text-anchor="end" font-size="15" fill="#0f172a">5,526</text>
+        <text x="580" y="892" text-anchor="end" font-size="15" fill="#0f172a">5,832</text>
+        <text x="1650" y="892" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-19)">0x910f04154025e1bed8adc23c9cd12a47dfc6b4f53ff0aa724e49a1a85d4e39d1</text>
+      </g><g>
+        <rect x="57" y="904" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="938" x2="1663" y2="938" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="926" font-size="15" fill="#0f172a">Epoch 20</text>
+        <text x="400" y="926" text-anchor="end" font-size="15" fill="#0f172a">5,833</text>
+        <text x="580" y="926" text-anchor="end" font-size="15" fill="#0f172a">6,139</text>
+        <text x="1650" y="926" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-20)">0x223029194ec89beff47dc08a9c8266f09821baf06662fe43817c980ae13f888b</text>
+      </g><g>
+        <rect x="57" y="938" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="972" x2="1663" y2="972" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="960" font-size="15" fill="#0f172a">Epoch 21</text>
+        <text x="400" y="960" text-anchor="end" font-size="15" fill="#0f172a">6,140</text>
+        <text x="580" y="960" text-anchor="end" font-size="15" fill="#0f172a">6,446</text>
+        <text x="1650" y="960" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-21)">0x4568e0e89b40fc8450528149072282a83c5852afbeb051a9f1bb67f9d1e469de</text>
+      </g><g>
+        <rect x="57" y="972" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="1006" x2="1663" y2="1006" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="994" font-size="15" fill="#0f172a">Epoch 22</text>
+        <text x="400" y="994" text-anchor="end" font-size="15" fill="#0f172a">6,447</text>
+        <text x="580" y="994" text-anchor="end" font-size="15" fill="#0f172a">6,753</text>
+        <text x="1650" y="994" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-22)">0x37db4be515d48c578c50ee7b3d17adf1165c8397eb2e30ce489dfdacc4aa3aa1</text>
+      </g><g>
+        <rect x="57" y="1006" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="1040" x2="1663" y2="1040" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1028" font-size="15" fill="#0f172a">Epoch 23</text>
+        <text x="400" y="1028" text-anchor="end" font-size="15" fill="#0f172a">6,754</text>
+        <text x="580" y="1028" text-anchor="end" font-size="15" fill="#0f172a">7,060</text>
+        <text x="1650" y="1028" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-23)">0x102bb56d5740d941ff1dacf5d1efd90ebf3db125513ba586c48dd3dee418c8c9</text>
+      </g><g>
+        <rect x="57" y="1040" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="1074" x2="1663" y2="1074" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1062" font-size="15" fill="#0f172a">Epoch 24</text>
+        <text x="400" y="1062" text-anchor="end" font-size="15" fill="#0f172a">7,061</text>
+        <text x="580" y="1062" text-anchor="end" font-size="15" fill="#0f172a">7,367</text>
+        <text x="1650" y="1062" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-24)">0xcf2e6696fdf3c98509c4575dd8b1261c8ffd48379a7288be73956d12f7ce3909</text>
+      </g><g>
+        <rect x="57" y="1074" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="1108" x2="1663" y2="1108" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1096" font-size="15" fill="#0f172a">Epoch 25</text>
+        <text x="400" y="1096" text-anchor="end" font-size="15" fill="#0f172a">7,368</text>
+        <text x="580" y="1096" text-anchor="end" font-size="15" fill="#0f172a">7,674</text>
+        <text x="1650" y="1096" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-25)">0x796740e3f760561034a9895bc96390044cc7d16bce909a5068b363ae4e82d25c</text>
+      </g><g>
+        <rect x="57" y="1108" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="1142" x2="1663" y2="1142" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1130" font-size="15" fill="#0f172a">Epoch 26</text>
+        <text x="400" y="1130" text-anchor="end" font-size="15" fill="#0f172a">7,675</text>
+        <text x="580" y="1130" text-anchor="end" font-size="15" fill="#0f172a">7,981</text>
+        <text x="1650" y="1130" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-26)">0x458dfbf2434cfe4fa95eacf52f008e33cbe277da1f866ae96fb107a03921c1f0</text>
+      </g><g>
+        <rect x="57" y="1142" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="1176" x2="1663" y2="1176" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1164" font-size="15" fill="#0f172a">Epoch 27</text>
+        <text x="400" y="1164" text-anchor="end" font-size="15" fill="#0f172a">7,982</text>
+        <text x="580" y="1164" text-anchor="end" font-size="15" fill="#0f172a">8,288</text>
+        <text x="1650" y="1164" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-27)">0x2cf83255c7bc813e02605d81149ab16b61dae7aa4f7b00a1163dc6dd5363dfff</text>
+      </g><g>
+        <rect x="57" y="1176" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="1210" x2="1663" y2="1210" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1198" font-size="15" fill="#0f172a">Epoch 28</text>
+        <text x="400" y="1198" text-anchor="end" font-size="15" fill="#0f172a">8,289</text>
+        <text x="580" y="1198" text-anchor="end" font-size="15" fill="#0f172a">8,595</text>
+        <text x="1650" y="1198" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-28)">0x8649c1dc9fa79134298e8b923464b4a58f17d3e2cd4d910f88f84963ffad79ad</text>
+      </g><g>
+        <rect x="57" y="1210" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="1244" x2="1663" y2="1244" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1232" font-size="15" fill="#0f172a">Epoch 29</text>
+        <text x="400" y="1232" text-anchor="end" font-size="15" fill="#0f172a">8,596</text>
+        <text x="580" y="1232" text-anchor="end" font-size="15" fill="#0f172a">8,902</text>
+        <text x="1650" y="1232" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-29)">0x41c5d2f454e70cc13e030a9f7f42b7c9dc6ff829b5c9500a75af50b80d343411</text>
+      </g><g>
+        <rect x="57" y="1244" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="1278" x2="1663" y2="1278" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1266" font-size="15" fill="#0f172a">Epoch 30</text>
+        <text x="400" y="1266" text-anchor="end" font-size="15" fill="#0f172a">8,903</text>
+        <text x="580" y="1266" text-anchor="end" font-size="15" fill="#0f172a">9,209</text>
+        <text x="1650" y="1266" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-30)">0x4b4a3035af1ed8193653a51a9b2aae86a3312a9178fbe1382fb518352ca38851</text>
+      </g><g>
+        <rect x="57" y="1278" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="1312" x2="1663" y2="1312" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1300" font-size="15" fill="#0f172a">Epoch 31</text>
+        <text x="400" y="1300" text-anchor="end" font-size="15" fill="#0f172a">9,210</text>
+        <text x="580" y="1300" text-anchor="end" font-size="15" fill="#0f172a">9,516</text>
+        <text x="1650" y="1300" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-31)">0x81e0ef5a8ce13c28c2888394683264ac7ec12e3fe676b85bae020d1f8b9ee1b7</text>
+      </g><g>
+        <rect x="57" y="1312" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="1346" x2="1663" y2="1346" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1334" font-size="15" fill="#0f172a">Epoch 32</text>
+        <text x="400" y="1334" text-anchor="end" font-size="15" fill="#0f172a">9,517</text>
+        <text x="580" y="1334" text-anchor="end" font-size="15" fill="#0f172a">9,823</text>
+        <text x="1650" y="1334" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-32)">0x0aa31dfb1619b8375d507645ae2a8e4fa72305b29f0f1ef25b2a9fadc14ac336</text>
+      </g><g>
+        <rect x="57" y="1346" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="1380" x2="1663" y2="1380" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1368" font-size="15" fill="#0f172a">Epoch 33</text>
+        <text x="400" y="1368" text-anchor="end" font-size="15" fill="#0f172a">9,824</text>
+        <text x="580" y="1368" text-anchor="end" font-size="15" fill="#0f172a">10,130</text>
+        <text x="1650" y="1368" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-33)">0x20d2e8b8efb20481d4399c505a943013a7f689780b248a00f5632b259a63f5a5</text>
+      </g><g>
+        <rect x="57" y="1380" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="1414" x2="1663" y2="1414" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1402" font-size="15" fill="#0f172a">Epoch 34</text>
+        <text x="400" y="1402" text-anchor="end" font-size="15" fill="#0f172a">10,131</text>
+        <text x="580" y="1402" text-anchor="end" font-size="15" fill="#0f172a">10,437</text>
+        <text x="1650" y="1402" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-34)">0xe0f12beeedd4c76ee04aadcda93ee6e61a14d407c22674f104b3feb85b93b082</text>
+      </g><g>
+        <rect x="57" y="1414" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="1448" x2="1663" y2="1448" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1436" font-size="15" fill="#0f172a">Epoch 35</text>
+        <text x="400" y="1436" text-anchor="end" font-size="15" fill="#0f172a">10,438</text>
+        <text x="580" y="1436" text-anchor="end" font-size="15" fill="#0f172a">10,744</text>
+        <text x="1650" y="1436" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-35)">0xe04f6b2b369deee4f0ac22abaa2928c635611df8dbef5ffd678c4f9028e6e6e6</text>
+      </g><g>
+        <rect x="57" y="1448" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="1482" x2="1663" y2="1482" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1470" font-size="15" fill="#0f172a">Epoch 36</text>
+        <text x="400" y="1470" text-anchor="end" font-size="15" fill="#0f172a">10,745</text>
+        <text x="580" y="1470" text-anchor="end" font-size="15" fill="#0f172a">11,051</text>
+        <text x="1650" y="1470" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-36)">0x7a9b77c8661e270bc08ed41a698249f3609a312178115fe54cf7c758eb28a3b4</text>
+      </g><g>
+        <rect x="57" y="1482" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="1516" x2="1663" y2="1516" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1504" font-size="15" fill="#0f172a">Epoch 37</text>
+        <text x="400" y="1504" text-anchor="end" font-size="15" fill="#0f172a">11,052</text>
+        <text x="580" y="1504" text-anchor="end" font-size="15" fill="#0f172a">11,358</text>
+        <text x="1650" y="1504" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-37)">0x3c97ad42b6bb68e5b448d5b0a1dbf6278015145a2973230090e0f93fc453c79a</text>
+      </g><g>
+        <rect x="57" y="1516" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="1550" x2="1663" y2="1550" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1538" font-size="15" fill="#0f172a">Epoch 38</text>
+        <text x="400" y="1538" text-anchor="end" font-size="15" fill="#0f172a">11,359</text>
+        <text x="580" y="1538" text-anchor="end" font-size="15" fill="#0f172a">11,665</text>
+        <text x="1650" y="1538" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-38)">0x70f0642bf48629027a54c25e2cbf443f2e284d90a689f460e479642a4e071a16</text>
+      </g><g>
+        <rect x="57" y="1550" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="1584" x2="1663" y2="1584" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1572" font-size="15" fill="#0f172a">Epoch 39</text>
+        <text x="400" y="1572" text-anchor="end" font-size="15" fill="#0f172a">11,666</text>
+        <text x="580" y="1572" text-anchor="end" font-size="15" fill="#0f172a">11,972</text>
+        <text x="1650" y="1572" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-39)">0xac626328057dda2282cde1d077d9b339cf2b2985c92915a959bbf2acdf3c43d5</text>
+      </g><g>
+        <rect x="57" y="1584" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="1618" x2="1663" y2="1618" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1606" font-size="15" fill="#0f172a">Epoch 40</text>
+        <text x="400" y="1606" text-anchor="end" font-size="15" fill="#0f172a">11,973</text>
+        <text x="580" y="1606" text-anchor="end" font-size="15" fill="#0f172a">12,279</text>
+        <text x="1650" y="1606" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-40)">0x3786963afe3c846f2c147c1f7dcbad88b67f9b2f2a66e23903b651650832c9b9</text>
+      </g><g>
+        <rect x="57" y="1618" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="1652" x2="1663" y2="1652" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1640" font-size="15" fill="#0f172a">Epoch 41</text>
+        <text x="400" y="1640" text-anchor="end" font-size="15" fill="#0f172a">12,280</text>
+        <text x="580" y="1640" text-anchor="end" font-size="15" fill="#0f172a">12,586</text>
+        <text x="1650" y="1640" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-41)">0x47eeb52459e2cf1481cb541609c9240b4df0af7fdbc6568cc21f94777555a34f</text>
+      </g><g>
+        <rect x="57" y="1652" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="1686" x2="1663" y2="1686" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1674" font-size="15" fill="#0f172a">Epoch 42</text>
+        <text x="400" y="1674" text-anchor="end" font-size="15" fill="#0f172a">12,587</text>
+        <text x="580" y="1674" text-anchor="end" font-size="15" fill="#0f172a">12,893</text>
+        <text x="1650" y="1674" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-42)">0x85c2836212959182fcef093b859af480e7630693ca8cb74e9b027bbd273e47a6</text>
+      </g><g>
+        <rect x="57" y="1686" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="1720" x2="1663" y2="1720" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1708" font-size="15" fill="#0f172a">Epoch 43</text>
+        <text x="400" y="1708" text-anchor="end" font-size="15" fill="#0f172a">12,894</text>
+        <text x="580" y="1708" text-anchor="end" font-size="15" fill="#0f172a">13,200</text>
+        <text x="1650" y="1708" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-43)">0x1c8bbc8008db0d9527a66d92c0e7c57c4abd634b3082b5ae7b31d2c9cd81ae95</text>
+      </g><g>
+        <rect x="57" y="1720" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="1754" x2="1663" y2="1754" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1742" font-size="15" fill="#0f172a">Epoch 44</text>
+        <text x="400" y="1742" text-anchor="end" font-size="15" fill="#0f172a">13,201</text>
+        <text x="580" y="1742" text-anchor="end" font-size="15" fill="#0f172a">13,507</text>
+        <text x="1650" y="1742" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-44)">0x6af89dce2a52f9dddee4a70d6c3e61e912aed875305215e9c7046d0955b5a56d</text>
+      </g><g>
+        <rect x="57" y="1754" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="1788" x2="1663" y2="1788" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1776" font-size="15" fill="#0f172a">Epoch 45</text>
+        <text x="400" y="1776" text-anchor="end" font-size="15" fill="#0f172a">13,508</text>
+        <text x="580" y="1776" text-anchor="end" font-size="15" fill="#0f172a">13,814</text>
+        <text x="1650" y="1776" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-45)">0x85a34cb9c78cc60e972057c1b2fedb5a8d82a5ef4d83a733ed4eacfbe9340a64</text>
+      </g><g>
+        <rect x="57" y="1788" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="1822" x2="1663" y2="1822" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1810" font-size="15" fill="#0f172a">Epoch 46</text>
+        <text x="400" y="1810" text-anchor="end" font-size="15" fill="#0f172a">13,815</text>
+        <text x="580" y="1810" text-anchor="end" font-size="15" fill="#0f172a">14,121</text>
+        <text x="1650" y="1810" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-46)">0x23c2da1b2b3030de546bd4f9b6a1ae1a28c658b1c142b1fef06488e3578a67b8</text>
+      </g><g>
+        <rect x="57" y="1822" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="1856" x2="1663" y2="1856" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1844" font-size="15" fill="#0f172a">Epoch 47</text>
+        <text x="400" y="1844" text-anchor="end" font-size="15" fill="#0f172a">14,122</text>
+        <text x="580" y="1844" text-anchor="end" font-size="15" fill="#0f172a">14,428</text>
+        <text x="1650" y="1844" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-47)">0xb9536ec7aba80c3c9810aee672e154f76e889ce63b562c65ee3d535adb15b509</text>
+      </g><g>
+        <rect x="57" y="1856" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="1890" x2="1663" y2="1890" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1878" font-size="15" fill="#0f172a">Epoch 48</text>
+        <text x="400" y="1878" text-anchor="end" font-size="15" fill="#0f172a">14,429</text>
+        <text x="580" y="1878" text-anchor="end" font-size="15" fill="#0f172a">14,735</text>
+        <text x="1650" y="1878" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-48)">0xc1d20f9811228840841348fbc81529e47c4c77170c82e8ccf5a121649515c05f</text>
+      </g><g>
+        <rect x="57" y="1890" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="1924" x2="1663" y2="1924" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1912" font-size="15" fill="#0f172a">Epoch 49</text>
+        <text x="400" y="1912" text-anchor="end" font-size="15" fill="#0f172a">14,736</text>
+        <text x="580" y="1912" text-anchor="end" font-size="15" fill="#0f172a">15,042</text>
+        <text x="1650" y="1912" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-49)">0x78b67ec385c8bb491dbab588acb532b6c253fd54695a119a06a3382b288851a6</text>
+      </g><g>
+        <rect x="57" y="1924" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="1958" x2="1663" y2="1958" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1946" font-size="15" fill="#0f172a">Epoch 50</text>
+        <text x="400" y="1946" text-anchor="end" font-size="15" fill="#0f172a">15,043</text>
+        <text x="580" y="1946" text-anchor="end" font-size="15" fill="#0f172a">15,349</text>
+        <text x="1650" y="1946" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-50)">0x7a3b12e768ce674f5ec5c775fce0f4e0c31111b138109fa9c59051e1be9504a7</text>
+      </g><g>
+        <rect x="57" y="1958" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="1992" x2="1663" y2="1992" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="1980" font-size="15" fill="#0f172a">Epoch 51</text>
+        <text x="400" y="1980" text-anchor="end" font-size="15" fill="#0f172a">15,350</text>
+        <text x="580" y="1980" text-anchor="end" font-size="15" fill="#0f172a">15,656</text>
+        <text x="1650" y="1980" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-51)">0x531ac24203cb1d8bf7074b62df1de3c0d57f574e79e0ae5eef7c8d1fd9cf93b7</text>
+      </g><g>
+        <rect x="57" y="1992" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="2026" x2="1663" y2="2026" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2014" font-size="15" fill="#0f172a">Epoch 52</text>
+        <text x="400" y="2014" text-anchor="end" font-size="15" fill="#0f172a">15,657</text>
+        <text x="580" y="2014" text-anchor="end" font-size="15" fill="#0f172a">15,963</text>
+        <text x="1650" y="2014" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-52)">0x5f8d2c0611257f8b08809942c44e376383da1be11deba27478e9365a5da7fff1</text>
+      </g><g>
+        <rect x="57" y="2026" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="2060" x2="1663" y2="2060" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2048" font-size="15" fill="#0f172a">Epoch 53</text>
+        <text x="400" y="2048" text-anchor="end" font-size="15" fill="#0f172a">15,964</text>
+        <text x="580" y="2048" text-anchor="end" font-size="15" fill="#0f172a">16,270</text>
+        <text x="1650" y="2048" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-53)">0xa3a7eb52990aae91e92ad9a3b866cdb0d793ea3383c7ccb88848347b95ce67c8</text>
+      </g><g>
+        <rect x="57" y="2060" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="2094" x2="1663" y2="2094" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2082" font-size="15" fill="#0f172a">Epoch 54</text>
+        <text x="400" y="2082" text-anchor="end" font-size="15" fill="#0f172a">16,271</text>
+        <text x="580" y="2082" text-anchor="end" font-size="15" fill="#0f172a">16,577</text>
+        <text x="1650" y="2082" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-54)">0x585e1c3226e70177254ad4c623a5d99efa31c9099fc79b7ae15b1d391dfd8314</text>
+      </g><g>
+        <rect x="57" y="2094" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="2128" x2="1663" y2="2128" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2116" font-size="15" fill="#0f172a">Epoch 55</text>
+        <text x="400" y="2116" text-anchor="end" font-size="15" fill="#0f172a">16,578</text>
+        <text x="580" y="2116" text-anchor="end" font-size="15" fill="#0f172a">16,884</text>
+        <text x="1650" y="2116" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-55)">0x07a50fc769192599d1246b53d2b352a80741915585649f61a41e5fc98ae3dc8b</text>
+      </g><g>
+        <rect x="57" y="2128" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="2162" x2="1663" y2="2162" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2150" font-size="15" fill="#0f172a">Epoch 56</text>
+        <text x="400" y="2150" text-anchor="end" font-size="15" fill="#0f172a">16,885</text>
+        <text x="580" y="2150" text-anchor="end" font-size="15" fill="#0f172a">17,191</text>
+        <text x="1650" y="2150" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-56)">0x99022242c96ca2347612aff425adbb99a53801a7b4880bde786e995f23c1bf94</text>
+      </g><g>
+        <rect x="57" y="2162" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="2196" x2="1663" y2="2196" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2184" font-size="15" fill="#0f172a">Epoch 57</text>
+        <text x="400" y="2184" text-anchor="end" font-size="15" fill="#0f172a">17,192</text>
+        <text x="580" y="2184" text-anchor="end" font-size="15" fill="#0f172a">17,498</text>
+        <text x="1650" y="2184" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-57)">0x735654abae65317ef5b6d83b39b588b5c6958ac54228a8f45c53a54e689ecbd9</text>
+      </g><g>
+        <rect x="57" y="2196" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="2230" x2="1663" y2="2230" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2218" font-size="15" fill="#0f172a">Epoch 58</text>
+        <text x="400" y="2218" text-anchor="end" font-size="15" fill="#0f172a">17,499</text>
+        <text x="580" y="2218" text-anchor="end" font-size="15" fill="#0f172a">17,805</text>
+        <text x="1650" y="2218" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-58)">0x7c8d6ad0032714a508630ae6103e10c3e38ec04e0f3912b0478cb250a908bf3b</text>
+      </g><g>
+        <rect x="57" y="2230" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="2264" x2="1663" y2="2264" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2252" font-size="15" fill="#0f172a">Epoch 59</text>
+        <text x="400" y="2252" text-anchor="end" font-size="15" fill="#0f172a">17,806</text>
+        <text x="580" y="2252" text-anchor="end" font-size="15" fill="#0f172a">18,112</text>
+        <text x="1650" y="2252" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-59)">0x3341702aed783cf63c10a2c112c184b142bbc444c029f50a7e9e694793ee934f</text>
+      </g><g>
+        <rect x="57" y="2264" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="2298" x2="1663" y2="2298" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2286" font-size="15" fill="#0f172a">Epoch 60</text>
+        <text x="400" y="2286" text-anchor="end" font-size="15" fill="#0f172a">18,113</text>
+        <text x="580" y="2286" text-anchor="end" font-size="15" fill="#0f172a">18,419</text>
+        <text x="1650" y="2286" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-60)">0xc4af31d6d3138cf794d8a7d4de9e9daef25e81678550441784dc8d5b8233558c</text>
+      </g><g>
+        <rect x="57" y="2298" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="2332" x2="1663" y2="2332" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2320" font-size="15" fill="#0f172a">Epoch 61</text>
+        <text x="400" y="2320" text-anchor="end" font-size="15" fill="#0f172a">18,420</text>
+        <text x="580" y="2320" text-anchor="end" font-size="15" fill="#0f172a">18,726</text>
+        <text x="1650" y="2320" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-61)">0x67d76e88a5efef480a4b977e55f89fe0e943b06ca0a32bcfc35e3481c2dbb54b</text>
+      </g><g>
+        <rect x="57" y="2332" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="2366" x2="1663" y2="2366" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2354" font-size="15" fill="#0f172a">Epoch 62</text>
+        <text x="400" y="2354" text-anchor="end" font-size="15" fill="#0f172a">18,727</text>
+        <text x="580" y="2354" text-anchor="end" font-size="15" fill="#0f172a">19,033</text>
+        <text x="1650" y="2354" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-62)">0x86857570dd78a6f59cce9d22619f1d069f50143f518d8b6c8db063714314c2b1</text>
+      </g><g>
+        <rect x="57" y="2366" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="2400" x2="1663" y2="2400" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2388" font-size="15" fill="#0f172a">Epoch 63</text>
+        <text x="400" y="2388" text-anchor="end" font-size="15" fill="#0f172a">19,034</text>
+        <text x="580" y="2388" text-anchor="end" font-size="15" fill="#0f172a">19,340</text>
+        <text x="1650" y="2388" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-63)">0x8e43fc9d113fb11c594052687df7565d3c060a6a1da11ae8810f664a17979d53</text>
+      </g><g>
+        <rect x="57" y="2400" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="2434" x2="1663" y2="2434" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2422" font-size="15" fill="#0f172a">Epoch 64</text>
+        <text x="400" y="2422" text-anchor="end" font-size="15" fill="#0f172a">19,341</text>
+        <text x="580" y="2422" text-anchor="end" font-size="15" fill="#0f172a">19,647</text>
+        <text x="1650" y="2422" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-64)">0x4647d8909fa1aa8cfc171b105b6bb31d352ba0a51fe83235c65ff2ff266bb5cd</text>
+      </g><g>
+        <rect x="57" y="2434" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="2468" x2="1663" y2="2468" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2456" font-size="15" fill="#0f172a">Epoch 65</text>
+        <text x="400" y="2456" text-anchor="end" font-size="15" fill="#0f172a">19,648</text>
+        <text x="580" y="2456" text-anchor="end" font-size="15" fill="#0f172a">19,954</text>
+        <text x="1650" y="2456" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-65)">0xa2a0b06ca8d42c1e94ff73617d8cdbd7ff297c3e151f3a100d4a85f141c40a38</text>
+      </g><g>
+        <rect x="57" y="2468" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="2502" x2="1663" y2="2502" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2490" font-size="15" fill="#0f172a">Epoch 66</text>
+        <text x="400" y="2490" text-anchor="end" font-size="15" fill="#0f172a">19,955</text>
+        <text x="580" y="2490" text-anchor="end" font-size="15" fill="#0f172a">20,261</text>
+        <text x="1650" y="2490" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-66)">0x682d75d31fdebbe7f3ac4914a6928d9ef8fc34cb0b976e42565841645d60ccdd</text>
+      </g><g>
+        <rect x="57" y="2502" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="2536" x2="1663" y2="2536" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2524" font-size="15" fill="#0f172a">Epoch 67</text>
+        <text x="400" y="2524" text-anchor="end" font-size="15" fill="#0f172a">20,262</text>
+        <text x="580" y="2524" text-anchor="end" font-size="15" fill="#0f172a">20,568</text>
+        <text x="1650" y="2524" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-67)">0xedbfc72c37317304968fa9beb113c63a51cea766f1505bfa9df00f122429bd9b</text>
+      </g><g>
+        <rect x="57" y="2536" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="2570" x2="1663" y2="2570" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2558" font-size="15" fill="#0f172a">Epoch 68</text>
+        <text x="400" y="2558" text-anchor="end" font-size="15" fill="#0f172a">20,569</text>
+        <text x="580" y="2558" text-anchor="end" font-size="15" fill="#0f172a">20,875</text>
+        <text x="1650" y="2558" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-68)">0xde1b1141b7f91d57ff286edfff329820c49aac89da1a41dce742f54fcd5e8ae5</text>
+      </g><g>
+        <rect x="57" y="2570" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="2604" x2="1663" y2="2604" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2592" font-size="15" fill="#0f172a">Epoch 69</text>
+        <text x="400" y="2592" text-anchor="end" font-size="15" fill="#0f172a">20,876</text>
+        <text x="580" y="2592" text-anchor="end" font-size="15" fill="#0f172a">21,182</text>
+        <text x="1650" y="2592" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-69)">0xb77bfe8a87cea47ef7009ed8e7d5721cfd7ce2fdfc7e9c5fa8f3aaa3184740c8</text>
+      </g><g>
+        <rect x="57" y="2604" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="2638" x2="1663" y2="2638" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2626" font-size="15" fill="#0f172a">Epoch 70</text>
+        <text x="400" y="2626" text-anchor="end" font-size="15" fill="#0f172a">21,183</text>
+        <text x="580" y="2626" text-anchor="end" font-size="15" fill="#0f172a">21,489</text>
+        <text x="1650" y="2626" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-70)">0x2bbffcfc668ae5ad731154416ccc78cace6f6a75a63368620fcf91a994259532</text>
+      </g><g>
+        <rect x="57" y="2638" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="2672" x2="1663" y2="2672" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2660" font-size="15" fill="#0f172a">Epoch 71</text>
+        <text x="400" y="2660" text-anchor="end" font-size="15" fill="#0f172a">21,490</text>
+        <text x="580" y="2660" text-anchor="end" font-size="15" fill="#0f172a">21,796</text>
+        <text x="1650" y="2660" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-71)">0x84770c85293d37c85447321f76319ab495d13a9d8ea60395aa35c83dd0d5912a</text>
+      </g><g>
+        <rect x="57" y="2672" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="2706" x2="1663" y2="2706" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2694" font-size="15" fill="#0f172a">Epoch 72</text>
+        <text x="400" y="2694" text-anchor="end" font-size="15" fill="#0f172a">21,797</text>
+        <text x="580" y="2694" text-anchor="end" font-size="15" fill="#0f172a">22,103</text>
+        <text x="1650" y="2694" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-72)">0x7aab10cdb4a215cc90bed4ad5ee5e3faf4ce28a39e6c3f4410d7587500ddb29b</text>
+      </g><g>
+        <rect x="57" y="2706" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="2740" x2="1663" y2="2740" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2728" font-size="15" fill="#0f172a">Epoch 73</text>
+        <text x="400" y="2728" text-anchor="end" font-size="15" fill="#0f172a">22,104</text>
+        <text x="580" y="2728" text-anchor="end" font-size="15" fill="#0f172a">22,410</text>
+        <text x="1650" y="2728" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-73)">0x2fc1f11ade0708a7da586e79aca9e8fe68c0c5e8237d68c414df717051481626</text>
+      </g><g>
+        <rect x="57" y="2740" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="2774" x2="1663" y2="2774" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2762" font-size="15" fill="#0f172a">Epoch 74</text>
+        <text x="400" y="2762" text-anchor="end" font-size="15" fill="#0f172a">22,411</text>
+        <text x="580" y="2762" text-anchor="end" font-size="15" fill="#0f172a">22,717</text>
+        <text x="1650" y="2762" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-74)">0xeb55ffb88fe0e2bc820a2a36313abd2c331cca15309cc3954449498f0d486636</text>
+      </g><g>
+        <rect x="57" y="2774" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="2808" x2="1663" y2="2808" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2796" font-size="15" fill="#0f172a">Epoch 75</text>
+        <text x="400" y="2796" text-anchor="end" font-size="15" fill="#0f172a">22,718</text>
+        <text x="580" y="2796" text-anchor="end" font-size="15" fill="#0f172a">23,024</text>
+        <text x="1650" y="2796" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-75)">0x8b1dfd8fb63562e97c4356e4da96c04cf8ab968128b3b734edc91476de0b60d2</text>
+      </g><g>
+        <rect x="57" y="2808" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="2842" x2="1663" y2="2842" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2830" font-size="15" fill="#0f172a">Epoch 76</text>
+        <text x="400" y="2830" text-anchor="end" font-size="15" fill="#0f172a">23,025</text>
+        <text x="580" y="2830" text-anchor="end" font-size="15" fill="#0f172a">23,331</text>
+        <text x="1650" y="2830" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-76)">0x90823c1de080325060de89ee35bafafc237015ea0f9f37952c675ea009f72fe9</text>
+      </g><g>
+        <rect x="57" y="2842" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="2876" x2="1663" y2="2876" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2864" font-size="15" fill="#0f172a">Epoch 77</text>
+        <text x="400" y="2864" text-anchor="end" font-size="15" fill="#0f172a">23,332</text>
+        <text x="580" y="2864" text-anchor="end" font-size="15" fill="#0f172a">23,638</text>
+        <text x="1650" y="2864" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-77)">0x462ac1cc0c26b4b07bec3a86cd7ee66921029245da544044ea08e95dbf289ae6</text>
+      </g><g>
+        <rect x="57" y="2876" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="2910" x2="1663" y2="2910" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2898" font-size="15" fill="#0f172a">Epoch 78</text>
+        <text x="400" y="2898" text-anchor="end" font-size="15" fill="#0f172a">23,639</text>
+        <text x="580" y="2898" text-anchor="end" font-size="15" fill="#0f172a">23,945</text>
+        <text x="1650" y="2898" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-78)">0xd2a932b4cbb297b308fefd1273ac95712c3a2e7f00a5fa20c0c1cada59b1bdf1</text>
+      </g><g>
+        <rect x="57" y="2910" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="2944" x2="1663" y2="2944" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2932" font-size="15" fill="#0f172a">Epoch 79</text>
+        <text x="400" y="2932" text-anchor="end" font-size="15" fill="#0f172a">23,946</text>
+        <text x="580" y="2932" text-anchor="end" font-size="15" fill="#0f172a">24,252</text>
+        <text x="1650" y="2932" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-79)">0xe2d62736aedfd8bedfe8d727b68b833ca56735274750caf518a3db33a6761087</text>
+      </g><g>
+        <rect x="57" y="2944" width="1606" height="34" fill="#f8fafc" />
+        <line x1="57" y1="2978" x2="1663" y2="2978" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="2966" font-size="15" fill="#0f172a">Epoch 80</text>
+        <text x="400" y="2966" text-anchor="end" font-size="15" fill="#0f172a">24,253</text>
+        <text x="580" y="2966" text-anchor="end" font-size="15" fill="#0f172a">24,559</text>
+        <text x="1650" y="2966" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-80)">0xaa7f50707141d050b68a8b34e2414b50c0c84055c0fa670cc76ac722ea48d465</text>
+      </g><g>
+        <rect x="57" y="2978" width="1606" height="34" fill="#ffffff" />
+        <line x1="57" y1="3012" x2="1663" y2="3012" stroke="#e5e7eb" stroke-width="1" />
+        <text x="72" y="3000" font-size="15" fill="#0f172a">Epoch 81</text>
+        <text x="400" y="3000" text-anchor="end" font-size="15" fill="#0f172a">24,560</text>
+        <text x="580" y="3000" text-anchor="end" font-size="15" fill="#0f172a">24,866</text>
+        <text x="1650" y="3000" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-81)">0x92f50c80155dec8f5ab279e22cbb1b7b3021aff538a7ecb3f632f47eb62a0557</text>
+      </g><g>
+        <rect x="57" y="3012" width="1606" height="34" fill="#f8fafc" />
+        
+        <text x="72" y="3034" font-size="15" fill="#0f172a">Epoch 82</text>
+        <text x="400" y="3034" text-anchor="end" font-size="15" fill="#0f172a">24,867</text>
+        <text x="580" y="3034" text-anchor="end" font-size="15" fill="#0f172a">24,999</text>
+        <text x="1650" y="3034" text-anchor="end" font-size="14" fill="#0f172a" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" clip-path="url(#seed-row-82)">0xf7b7c39d6583860793bc9c64745ba5e0318175a17e55a0ff2511f5efe931a77b</text>
+      </g>
+  <text x="56" y="3072" font-size="14" fill="#475569">Start and end indices are zero-based sequence indices.</text>
+</svg>

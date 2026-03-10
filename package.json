@@ -1,0 +1,100 @@
+{
+  "name": "epoch-permutation",
+  "version": "1.0.0",
+  "description": "Deterministic permutation algorithm with epoch-based seed rotation for fair, unpredictable sequence generation",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cpauldev/epoch-permutation.git"
+  },
+  "keywords": [
+    "permutation",
+    "algorithm",
+    "feistel",
+    "epoch",
+    "deterministic",
+    "shuffle",
+    "cryptography",
+    "solidity",
+    "smart-contract",
+    "blockchain"
+  ],
+  "scripts": {
+    "lint": "npm run lint:eslint && npm run evm:typecheck",
+    "lint:eslint": "eslint --config .config/eslint.config.mjs \"**/*.{ts,js,mjs,cjs}\"",
+    "lint:sol": "solhint \"implementations/evm/contracts/**/*.sol\"",
+    "lint:md": "markdownlint-cli2 --config .config/.markdownlint-cli2.jsonc",
+    "format": "prettier --config .config/.prettierrc --write --ignore-path .config/.prettierignore .",
+    "prepare": "husky .config/.husky",
+    "repo:clean": "node scripts/clean.cjs",
+    "repo:verify": "npm run evm:test && npm run js:test && npm run rust:test && npm run rust:build:solana && npm run rust:build:cosmwasm && npm run aptos:test && npm run starknet:test && npm run sui:test",
+    "evm:compile": "hardhat compile",
+    "evm:typecheck": "hardhat compile && tsc --noEmit",
+    "evm:test": "npm run evm:typecheck && npm run evm:test:unit && npm run evm:test:local",
+    "evm:test:unit": "hardhat test",
+    "evm:test:local": "node implementations/evm/scripts/runLocalPermutationVerification.cjs",
+    "evm:benchmark:gas": "node implementations/evm/scripts/runPermutationGasBenchmark.cjs --range 5000 --bins 50 --runs 1",
+    "js:stress": "node implementations/js/scripts/rngStress.cjs",
+    "js:test": "node implementations/js/scripts/rngStress.cjs --runs 5 --max-range 25000 --progress-every 1",
+    "js:chart:scatter": "node scripts/docs/renderPermutationScatter.cjs",
+    "rust:test": "node implementations/rust/scripts/runCargo.cjs test --manifest-path implementations/rust/Cargo.toml --workspace",
+    "rust:check": "node implementations/rust/scripts/runCargo.cjs check --manifest-path implementations/rust/Cargo.toml --workspace",
+    "rust:build:solana": "node implementations/rust/scripts/runCargo.cjs build --manifest-path implementations/rust/Cargo.toml -p epoch-permutation-solana",
+    "rust:build:cosmwasm": "node implementations/rust/scripts/runCargo.cjs build --manifest-path implementations/rust/Cargo.toml -p epoch-permutation-cosmwasm --target wasm32-unknown-unknown --release",
+    "aptos:compile": "node implementations/tooling/runExternal.cjs aptos --cwd implementations/aptos -- move compile --package-dir .",
+    "aptos:test": "node implementations/tooling/runExternal.cjs aptos --cwd implementations/aptos -- move test --package-dir .",
+    "starknet:build": "node implementations/tooling/runExternal.cjs scarb --cwd implementations/starknet -- build",
+    "starknet:test": "node implementations/tooling/runExternal.cjs snforge --cwd implementations/starknet -- test",
+    "sui:build": "node implementations/tooling/runExternal.cjs sui --cwd implementations/sui -- move build",
+    "sui:test": "node implementations/tooling/runExternal.cjs sui --cwd implementations/sui -- move test"
+  },
+  "lint-staged": {
+    "*.{ts,js,mjs}": [
+      "eslint --config .config/eslint.config.mjs --fix",
+      "prettier --config .config/.prettierrc --write --ignore-path .config/.prettierignore"
+    ],
+    "*.cjs": [
+      "eslint --config .config/eslint.config.mjs --fix",
+      "prettier --config .config/.prettierrc --write --ignore-path .config/.prettierignore"
+    ],
+    "*.sol": [
+      "solhint --fix",
+      "prettier --config .config/.prettierrc --write --ignore-path .config/.prettierignore"
+    ],
+    "*.{json,css,html}": [
+      "prettier --config .config/.prettierrc --write --ignore-path .config/.prettierignore"
+    ],
+    "*.md": [
+      "markdownlint-cli2 --config .config/.markdownlint-cli2.jsonc --fix",
+      "prettier --config .config/.prettierrc --write --ignore-path .config/.prettierignore"
+    ]
+  },
+  "devDependencies": {
+    "@aptos-labs/aptos-cli": "^1.1.1",
+    "@eslint/js": "^10.0.1",
+    "@nomicfoundation/hardhat-ethers": "^4.0.6",
+    "@nomicfoundation/hardhat-ethers-chai-matchers": "^3.0.3",
+    "@nomicfoundation/hardhat-mocha": "^3.0.12",
+    "@nomicfoundation/hardhat-typechain": "^3.0.4",
+    "@openzeppelin/contracts": "^5.6.1",
+    "@types/chai": "^5.2.3",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^25.3.5",
+    "chai": "^6.2.2",
+    "eslint": "^10.0.3",
+    "eslint-config-prettier": "^10.1.8",
+    "ethers": "^6.16.0",
+    "globals": "^17.4.0",
+    "hardhat": "^3.1.11",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.3",
+    "markdownlint-cli2": "^0.21.0",
+    "mocha": "^11.7.5",
+    "prettier": "^3.8.1",
+    "prettier-plugin-solidity": "^2.2.1",
+    "solhint": "^6.0.3",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.57.0"
+  }
+}
