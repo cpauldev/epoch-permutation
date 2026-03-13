@@ -1,12 +1,6 @@
 const fs = require("node:fs");
 const path = require("node:path");
 
-function ensureDirectory(directory) {
-  const resolved = path.resolve(directory);
-  fs.mkdirSync(resolved, { recursive: true });
-  return resolved;
-}
-
 function ensureOutputPath(outputPath) {
   const resolved = path.resolve(outputPath);
   fs.mkdirSync(path.dirname(resolved), { recursive: true });
@@ -33,8 +27,6 @@ function writeJson(outputPath, payload) {
 
 module.exports = {
   buildTimestampedOutputPath,
-  ensureDirectory,
   ensureOutputPath,
-  timestampSlug,
   writeJson,
 };

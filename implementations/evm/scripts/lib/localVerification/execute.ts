@@ -1,4 +1,4 @@
-import { getEventArgs } from "../events.js";
+import { getEventArgs, requireReceipt } from "../events.js";
 import { toErrorMessage } from "../logging.js";
 import type { PermutationBatchHarness } from "../../../typechain-types/harnesses/PermutationBatchHarness.sol/PermutationBatchHarness.js";
 import type { BatchObservation, DeploymentHandle, RunStatus } from "./types.js";
@@ -66,7 +66,7 @@ export async function executeHarnessRun(
     const tx = await handle.harnessContract.runBatch(stepsRequested, {
       gasLimit: bufferedGasLimit(estimate),
     });
-    const receipt = await tx.wait();
+    const receipt = requireReceipt(await tx.wait());
     const args = getEventArgs(
       receipt,
       handle.harnessContract,

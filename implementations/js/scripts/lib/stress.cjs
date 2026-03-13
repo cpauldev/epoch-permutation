@@ -7,7 +7,7 @@ const {
 function buildStressConfig(rawArgs) {
   const seedModeValue = getConfigValue(
     rawArgs,
-    ["seedMode", "seed-mode"],
+    ["seed-mode"],
     "EPOCH_PERMUTATION_SEED_MODE",
   );
 
@@ -17,17 +17,13 @@ function buildStressConfig(rawArgs) {
       100,
     ),
     maxRange: toNumber(
-      getConfigValue(
-        rawArgs,
-        ["maxRange", "max-range"],
-        "EPOCH_PERMUTATION_MAX_RANGE",
-      ),
+      getConfigValue(rawArgs, ["max-range"], "EPOCH_PERMUTATION_MAX_RANGE"),
       25000,
     ),
     minEpochSize: toNumber(
       getConfigValue(
         rawArgs,
-        ["minEpochSize", "min-epoch-size"],
+        ["min-epoch-size"],
         "EPOCH_PERMUTATION_MIN_EPOCH_SIZE",
       ),
       250,
@@ -35,7 +31,7 @@ function buildStressConfig(rawArgs) {
     maxEpochSize: toNumber(
       getConfigValue(
         rawArgs,
-        ["maxEpochSize", "max-epoch-size"],
+        ["max-epoch-size"],
         "EPOCH_PERMUTATION_MAX_EPOCH_SIZE",
       ),
       750,
@@ -43,7 +39,7 @@ function buildStressConfig(rawArgs) {
     epochRounds: toNumber(
       getConfigValue(
         rawArgs,
-        ["epochRounds", "epoch-rounds"],
+        ["epoch-rounds"],
         "EPOCH_PERMUTATION_EPOCH_ROUNDS",
       ),
       1,
@@ -51,7 +47,7 @@ function buildStressConfig(rawArgs) {
     globalRounds: toNumber(
       getConfigValue(
         rawArgs,
-        ["globalRounds", "global-rounds"],
+        ["global-rounds"],
         "EPOCH_PERMUTATION_GLOBAL_ROUNDS",
       ),
       3,
@@ -60,11 +56,7 @@ function buildStressConfig(rawArgs) {
       ? String(seedModeValue).trim().toLowerCase()
       : "deterministic",
     seedBase: toNumber(
-      getConfigValue(
-        rawArgs,
-        ["seedBase", "seed-base"],
-        "EPOCH_PERMUTATION_SEED_BASE",
-      ),
+      getConfigValue(rawArgs, ["seed-base"], "EPOCH_PERMUTATION_SEED_BASE"),
       Date.now(),
     ),
     progressEvery: Math.max(
@@ -72,7 +64,7 @@ function buildStressConfig(rawArgs) {
       toNumber(
         getConfigValue(
           rawArgs,
-          ["progressEvery", "progress-every"],
+          ["progress-every"],
           "EPOCH_PERMUTATION_PROGRESS_EVERY",
         ),
         100,
@@ -81,7 +73,7 @@ function buildStressConfig(rawArgs) {
     stopOnFailure: toBoolean(
       getConfigValue(
         rawArgs,
-        ["stopOnFailure", "stop-on-failure"],
+        ["stop-on-failure"],
         "EPOCH_PERMUTATION_STOP_ON_FAILURE",
       ),
       true,

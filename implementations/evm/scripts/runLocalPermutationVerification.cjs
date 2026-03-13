@@ -9,13 +9,13 @@ const rawArgs = parseArgs(process.argv.slice(2));
 const env = { ...process.env };
 
 const mappings = {
-  range: ["range", "max-range"],
-  batchSize: ["batchSize", "batch-size"],
-  epochMin: ["epochMin", "epoch-min"],
-  epochMax: ["epochMax", "epoch-max"],
-  epochRounds: ["epochRounds", "epoch-rounds"],
-  globalRounds: ["globalRounds", "global-rounds"],
-  outputDir: ["outputDir", "output-dir"],
+  range: ["range"],
+  batchSize: ["batch-size"],
+  epochMin: ["epoch-min"],
+  epochMax: ["epoch-max"],
+  epochRounds: ["epoch-rounds"],
+  globalRounds: ["global-rounds"],
+  outputDir: ["output-dir"],
 };
 
 const envKeys = {
@@ -35,8 +35,7 @@ for (const [mappingKey, keys] of Object.entries(mappings)) {
   }
 }
 
-const skipCompile =
-  rawArgs["skip-compile"] === "true" || rawArgs.skipCompile === "true";
+const skipCompile = rawArgs["skip-compile"] === "true";
 const hardhat = path.join(
   process.cwd(),
   "node_modules",

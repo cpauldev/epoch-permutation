@@ -109,14 +109,14 @@ module epoch_permutation::epoch_permutation {
 
     public fun view_value(state: &State, sequence_index: u64): u64 {
         assert!(sequence_index < state.max_range, E_INPUT_OUT_OF_RANGE);
-        let simulated_seed = simulate_epoch_seed(&state.current_epoch_seed);
+        let current_seed = copy_seed(&state.current_epoch_seed);
         compute_permutation(
             state.max_range,
             state.epoch_size,
             state.epoch_rounds,
             state.global_rounds,
             sequence_index,
-            &simulated_seed,
+            &current_seed,
             &state.global_seed,
         )
     }
@@ -130,7 +130,8 @@ module epoch_permutation::epoch_permutation {
         )
     }
 
-    public fun destroy_zero(state: State) {
+    #[test_only]
+    fun destroy_zero(state: State) {
         let State {
             id,
             max_range: _,
@@ -346,10 +347,6 @@ module epoch_permutation::epoch_permutation {
             i = i + 1;
         };
         out
-    }
-
-    fun simulate_epoch_seed(current_epoch_seed: &vector<u8>): vector<u8> {
-        copy_seed(current_epoch_seed)
     }
 
     fun default_u64(value: u64, fallback: u64): u64 {

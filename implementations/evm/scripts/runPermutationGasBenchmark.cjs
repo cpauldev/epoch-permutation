@@ -13,13 +13,13 @@ const mappings = {
   runs: "PERM_BENCH_RUNS",
   bins: "PERM_BENCH_BINS",
   algorithms: "PERM_BENCH_ALGORITHMS",
-  epochMin: "PERM_BENCH_EPOCH_MIN",
-  epochMax: "PERM_BENCH_EPOCH_MAX",
-  epochRounds: "PERM_BENCH_EPOCH_ROUNDS",
-  globalRounds: "PERM_BENCH_GLOBAL_ROUNDS",
-  outputDir: "PERM_BENCH_OUTPUT_DIR",
-  verifyUniqueness: "PERM_BENCH_VERIFY_UNIQUENESS",
-  baseTimestamp: "PERM_BENCH_BASE_TIMESTAMP",
+  "epoch-min": "PERM_BENCH_EPOCH_MIN",
+  "epoch-max": "PERM_BENCH_EPOCH_MAX",
+  "epoch-rounds": "PERM_BENCH_EPOCH_ROUNDS",
+  "global-rounds": "PERM_BENCH_GLOBAL_ROUNDS",
+  "output-dir": "PERM_BENCH_OUTPUT_DIR",
+  "verify-uniqueness": "PERM_BENCH_VERIFY_UNIQUENESS",
+  "base-timestamp": "PERM_BENCH_BASE_TIMESTAMP",
 };
 
 for (const [argKey, envKey] of Object.entries(mappings)) {
@@ -28,8 +28,7 @@ for (const [argKey, envKey] of Object.entries(mappings)) {
   }
 }
 
-const skipCompile =
-  rawArgs["skip-compile"] === "true" || rawArgs.skipCompile === "true";
+const skipCompile = rawArgs["skip-compile"] === "true";
 const hardhat = path.join(
   process.cwd(),
   "node_modules",

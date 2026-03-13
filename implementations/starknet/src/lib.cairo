@@ -216,8 +216,7 @@ fn engine_next_value(ref engine: EngineState, generation: GenerationContext) -> 
 
 fn engine_view_value(engine: EngineState, sequence_index: u64) -> u64 {
     assert(sequence_index < engine.max_range, 'input_oob');
-    let simulated_seed = simulate_epoch_seed(engine, sequence_index);
-    compute_permutation(engine, sequence_index, simulated_seed)
+    compute_permutation(engine, sequence_index, engine.current_epoch_seed)
 }
 
 fn engine_current_epoch_info(engine: EngineState) -> EpochInfo {
@@ -336,10 +335,6 @@ fn rotate_epoch_seed(ref engine: EngineState, generation: GenerationContext) {
     );
 
     engine.current_epoch_seed = if next_seed == 0 { 1 } else { next_seed };
-}
-
-fn simulate_epoch_seed(engine: EngineState, _sequence_index: u64) -> felt252 {
-    engine.current_epoch_seed
 }
 
 fn feistel_permute(input: u64, seed: felt252, range: u64, rounds: u8) -> u64 {

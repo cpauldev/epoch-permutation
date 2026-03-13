@@ -1,5 +1,15 @@
 import type { BaseContract, ContractTransactionReceipt } from "ethers";
 
+export function requireReceipt(
+  receipt: ContractTransactionReceipt | null,
+): ContractTransactionReceipt {
+  if (receipt === null) {
+    throw new Error("Transaction receipt was not available");
+  }
+
+  return receipt;
+}
+
 export function getEventArgs(
   receipt: ContractTransactionReceipt,
   contract: BaseContract,

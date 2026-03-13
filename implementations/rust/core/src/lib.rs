@@ -164,8 +164,7 @@ impl EpochPermutation {
             });
         }
 
-        let simulated_seed = self.simulate_epoch_seed(sequence_index);
-        Ok(self.compute_permutation(sequence_index, &simulated_seed))
+        Ok(self.compute_permutation(sequence_index, &self.current_epoch_seed))
     }
 
     pub fn current_epoch_info(&self) -> EpochInfo {
@@ -227,17 +226,6 @@ impl EpochPermutation {
         } else {
             next_seed
         };
-    }
-
-    fn simulate_epoch_seed(&self, sequence_index: u64) -> Seed {
-        let epoch_number = sequence_index / self.epoch_size;
-        let current_epoch = self.permutation_counter / self.epoch_size;
-
-        if epoch_number == current_epoch {
-            self.current_epoch_seed
-        } else {
-            self.current_epoch_seed
-        }
     }
 }
 

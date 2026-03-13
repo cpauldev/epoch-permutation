@@ -4,7 +4,6 @@ export const DEFAULT_MAX_EPOCH_SIZE = 750;
 export const DEFAULT_EPOCH_ROUNDS = 1;
 export const DEFAULT_GLOBAL_ROUNDS = 3;
 export const DEFAULT_SEED = 1n;
-export const DEFAULT_SIMULATION_SEED = DEFAULT_SEED;
 export const DEFAULT_SEED_MODE = "deterministic";
 export const EPOCH_SIZE_LABEL = "EPOCH_SIZE";
 export const EPOCH_ROTATION_LABEL = "EPOCH_ROTATION";

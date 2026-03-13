@@ -31,7 +31,6 @@ context through explicit function parameters.
 | `next_value`         | Advances state and returns the next permuted value.             |
 | `view_value`         | Returns the current view-only permutation for a sequence index. |
 | `current_epoch_info` | Returns the current epoch number, seed, position, and size.     |
-| `destroy_zero`       | Deletes the `State` object in cleanup paths.                    |
 
 ## Commands
 
@@ -49,5 +48,5 @@ Run these commands from the repository root.
 | Storage model      | `State` is a `UID`-backed Sui object.                                                                                                      |
 | Address alias      | `Move.toml` binds the package address alias `epoch_permutation = "0x42"`.                                                                  |
 | Runtime inputs     | `next_value` takes `randomness_beacon`, `caller`, and `timestamp` as explicit inputs; it does not derive them internally from `TxContext`. |
-| Test behavior      | Tests are inline in `sources/epoch_permutation.move` and clean up state with `destroy_zero`.                                               |
+| Test behavior      | Tests are inline in `sources/epoch_permutation.move` and clean up state with a `#[test_only]` `destroy_zero` helper.                       |
 | Dependency pinning | `Move.lock` pins framework dependencies for the `testnet` environment.                                                                     |

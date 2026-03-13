@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { network } from "hardhat";
 import type { PermutationBenchmarkBase } from "../typechain-types/benchmarks/PermutationBenchmarkBase.js";
-import { getEventArgs } from "../scripts/lib/events.js";
+import { getEventArgs, requireReceipt } from "../scripts/lib/events.js";
 
 const { ethers } = await network.connect();
 
@@ -13,7 +13,7 @@ describe("Permutation Benchmark Algorithms", function () {
 
     for (let i = 0; i < RANGE; i++) {
       const tx = await contract.getNextPermutedValue();
-      const receipt = await tx.wait();
+      const receipt = requireReceipt(await tx.wait());
       const args = getEventArgs(receipt, contract, "PermutationExecuted");
       const sequenceIndex = Number(args[0]);
       const value = Number(args[1]);

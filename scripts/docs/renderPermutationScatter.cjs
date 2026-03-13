@@ -32,25 +32,25 @@ async function main() {
   const rawArgs = parseArgs(process.argv.slice(2));
   const fixedSeed = toBigInt(rawArgs.seed, configModule.DEFAULT_SEED);
   const maxRange = toNumber(
-    rawArgs.maxRange ?? rawArgs["max-range"],
+    rawArgs["max-range"],
     configModule.DEFAULT_MAX_RANGE,
   );
   const model = new EpochPermutation({
     maxRange,
     minEpochSize: toNumber(
-      rawArgs.minEpochSize ?? rawArgs["min-epoch-size"],
+      rawArgs["min-epoch-size"],
       configModule.DEFAULT_MIN_EPOCH_SIZE,
     ),
     maxEpochSize: toNumber(
-      rawArgs.maxEpochSize ?? rawArgs["max-epoch-size"],
+      rawArgs["max-epoch-size"],
       configModule.DEFAULT_MAX_EPOCH_SIZE,
     ),
     epochRounds: toNumber(
-      rawArgs.epochRounds ?? rawArgs["epoch-rounds"],
+      rawArgs["epoch-rounds"],
       configModule.DEFAULT_EPOCH_ROUNDS,
     ),
     globalRounds: toNumber(
-      rawArgs.globalRounds ?? rawArgs["global-rounds"],
+      rawArgs["global-rounds"],
       configModule.DEFAULT_GLOBAL_ROUNDS,
     ),
     seed: fixedSeed,

@@ -1,5 +1,5 @@
 import type { HardhatEthersHelpers } from "@nomicfoundation/hardhat-ethers/types";
-import { getEventArgs } from "./events.js";
+import { getEventArgs, requireReceipt } from "./events.js";
 import {
   average,
   meanOfRuns,
@@ -143,7 +143,7 @@ export async function benchmarkAlgorithm(
 
     for (let sequenceIndex = 0; sequenceIndex < config.range; sequenceIndex++) {
       const tx = await contract.getNextPermutedValue();
-      const receipt = await tx.wait();
+      const receipt = requireReceipt(await tx.wait());
       const gasUsed = Number(receipt.gasUsed);
       const args = getEventArgs(receipt, contract, "PermutationExecuted");
       const emittedSequenceIndex = Number(args[0]);
