@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 112" role="img" aria-labelledby="title">
   <title>Solidity</title>
-  <rect x="8" y="8" width="96" height="96" rx="22" fill="#1D3F9E" stroke="#0F2B73" stroke-width="1.5"/>
+  <rect x="8" y="8" width="96" height="96" rx="22" fill="#1D3F9E"/>
   <g transform="translate(36 24) scale(0.40)" fill="#F8FAFF">
     <path opacity="0.8" d="M50 44.3013L25 1L0 44.3013L25 87.6025L50 44.3013Z" />
     <path opacity="0.45" d="M50 44.3091L75 1.00781L25 1.00781L0 44.3091H50Z" />

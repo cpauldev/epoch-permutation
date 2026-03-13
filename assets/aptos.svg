@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 112" role="img" aria-labelledby="title">
   <title>Aptos</title>
-  <rect x="8" y="8" width="96" height="96" rx="22" fill="#D5FAD3" stroke="#0F0E0B" stroke-width="1.5"/>
+  <rect x="8" y="8" width="96" height="96" rx="22" fill="#D5FAD3"/>
   <svg x="18" y="17" width="76" height="78" viewBox="0 0 368 372" aria-hidden="true">
     <path d="M16.254 106.158C8.41883 122.639 2.95387 140.471 0.270508 159.193H156.188L190.23 106.158H16.254Z" fill="#0F0E0B"/>
     <path d="M367.746 159.194C365.062 140.465 359.597 122.646 351.762 106.159H258.305L224.275 53.1182H313.9C280.429 20.3161 234.585 0.0834961 184.012 0.0834961C133.44 0.0834961 87.5957 20.3161 54.1182 53.1182H224.281L190.239 106.159L224.281 159.194H367.746Z" fill="#0F0E0B"/>

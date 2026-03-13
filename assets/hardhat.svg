@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 112" role="img" aria-labelledby="title">
   <title>Hardhat</title>
-  <rect x="8" y="8" width="96" height="96" rx="22" fill="#FF8A00" stroke="#C75A00" stroke-width="1.5"/>
+  <rect x="8" y="8" width="96" height="96" rx="22" fill="#FF8A00"/>
   <defs>
     <linearGradient id="hardhat-a" x1="10.561" x2="10.561" y1="30.514" y2="6.186" gradientTransform="translate(-2.326 11.158) scale(2.56617)" gradientUnits="userSpaceOnUse">
       <stop stop-color="#EDCF00"/>
