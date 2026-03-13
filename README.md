@@ -1,6 +1,6 @@
 # Epoch Permutation
 
-## Epoch-Based Feistel Permutation for Deterministic Sequence Generation on Blockchain Networks
+## Epoch-Based Feistel Permutation for Deterministic Sequence Generation on Blockchain Smart Contracts
 
 <p align="center">
   <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge" height="28" style="vertical-align: middle;" /></a>
