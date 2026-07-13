@@ -2,15 +2,14 @@
 
 ![MIT License](https://img.shields.io/badge/-MIT_License-blue?style=flat-square)
 
-**EpochPermutation** generates bounded, non-repeating sequences without storing a shuffled array. Each sequence position maps to a unique value, making it useful when storing the full order would be expensive or impractical.
-
-The sequence is divided into epochs. Fixed seeds reproduce the complete sequence, while runtime-generated epoch seeds can depend on time, system state, external events, or new entropy. This allows later mappings to remain unknown until their inputs exist, while preserving reproducibility afterward.
+**EpochPermutation** generates bounded, non-repeating sequences without storing a shuffled array. The sequence is divided into epochs. Epoch seeds can depend on time, system state, external events, or new entropy. Seeds are revealed only when each epoch activates, keeping the full sequence unknown while preserving reproducibility afterward.
 
 Applications include non-repeating event rotation and procedural generation in games and simulations, as well as dispersed traversal of large datasets. In smart contracts, compact state reduces storage costs, while delayed epoch seeds can limit advance knowledge of outputs and reduce opportunities for transaction reordering, front-running, and other MEV strategies.
 
 The result is bounded, non-repeating, compact, and reproducible from its seeds and configuration. In the repository’s EVM benchmarks, it is also less gas-intensive than the benchmarked sparse Fisher–Yates variant.
 
 *The repository includes JavaScript and Solidity implementations, a shared Rust core with Solana and CosmWasm adapters, and native ports for Aptos Move, Starknet Cairo, and Sui Move.*
+
 
 <p>
   <img src="assets/ethereum.svg" height="56" alt="Ethereum" style="vertical-align: middle;" />
