@@ -39,7 +39,7 @@ Seed:              0x3bd8365c9b162c70d5084c746fe9505ec287c843326d47963e5f530931a
 Generated values:  9, 2, 11, 5, 1, 8
 
 Epoch:             2
-Seed:              derived from previous epoch's seed + timestamp 7th number is generated
+Seed:              calculated when 7th number is generated using the timestamp & previous epoch's seed
 Generated values:  unknown
 ```
 
