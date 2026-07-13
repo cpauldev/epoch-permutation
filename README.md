@@ -21,7 +21,7 @@
 
 `EpochPermutation` is a deterministic permutation generator for bounded, non-repeating sequences. It avoids storing a pre-shuffled array and uses epoch-based seed rotation to limit advance computation of future mappings.
 
-Epoch seeds are revealed only when their epoch becomes active, preventing advance computation of future mappings. This limits the ability for observers to target specific upcoming outputs through transaction reordering or front-running (MEV) strategies, while preserving deterministic behavior within the active epoch.
+Epoch seeds are revealed only when their epoch becomes active. This limits the ability for observers to target specific upcoming outputs through transaction reordering or front-running (MEV) strategies, while preserving deterministic behavior within the active epoch.
 
 The resulting sequence is bounded, non-repeating, compact, and reproducible. In the repository’s EVM benchmarks, it is also less gas-intensive than the benchmarked sparse Fisher–Yates variant.
 
