@@ -1,12 +1,18 @@
-# Epoch Permutation
+# Epoch Permutation: Epoch-Based Feistel Permutation for Deterministic Sequence Generation
 
-## Epoch-Based Feistel Permutation for Deterministic Sequence Generation on Blockchain Smart Contracts
+![MIT License](https://img.shields.io/badge/-MIT_License-blue?style=flat-square)
 
-<p align="center">
-  <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge" height="28" style="vertical-align: middle;" /></a>
-</p>
+**EpochPermutation** generates bounded, non-repeating sequences without storing a shuffled array. Each sequence position maps to a unique value, making it useful when storing the full order would be expensive or impractical.
 
-<p align="center">
+The sequence is divided into epochs. Fixed seeds reproduce the complete sequence, while runtime-generated epoch seeds can depend on time, system state, external events, or new entropy. This allows later mappings to remain unknown until their inputs exist, while preserving reproducibility afterward.
+
+Applications include non-repeating event rotation and procedural generation in games and simulations, as well as dispersed traversal of large datasets. In smart contracts, compact state reduces storage costs, while delayed epoch seeds can limit advance knowledge of outputs and reduce opportunities for transaction reordering, front-running, and other MEV strategies.
+
+The result is bounded, non-repeating, compact, and reproducible from its seeds and configuration. In the repository’s EVM benchmarks, it is also less gas-intensive than the benchmarked sparse Fisher–Yates variant.
+
+*The repository includes JavaScript and Solidity implementations, a shared Rust core with Solana and CosmWasm adapters, and native ports for Aptos Move, Starknet Cairo, and Sui Move.*
+
+<p>
   <img src="assets/ethereum.svg" height="56" alt="Ethereum" style="vertical-align: middle;" />
   <img src="assets/solidity.svg" height="56" alt="Solidity" style="vertical-align: middle;" />
   <img src="assets/hardhat.svg" height="56" alt="Hardhat" style="vertical-align: middle;" />
@@ -19,13 +25,24 @@
   <img src="assets/sui.svg" height="56" alt="Sui" style="vertical-align: middle;" />
 </p>
 
-`EpochPermutation` is a deterministic permutation generator for bounded, non-repeating sequences. It avoids storing a pre-shuffled array and uses epoch-based seed rotation to limit advance computation of future mappings.
+## Example
 
-Epoch seeds are revealed only when their epoch becomes active. This limits the ability for observers to target specific upcoming outputs through transaction reordering or front-running (MEV) strategies, while preserving deterministic behavior within the active epoch.
+A sequence containing `1–12` might use an epoch-size range of `4–6`. If the generated epoch size is `6`, the sequence has two epochs.
 
-The resulting sequence is bounded, non-repeating, compact, and reproducible. In the repository’s EVM benchmarks, it is also less gas-intensive than the benchmarked sparse Fisher–Yates variant.
+```text
+Range:             1–12
+Epoch-size range:  4–6
+Generated size:    6
+Global seed:       0x9f2c84d01a762cb330d5a5f08c66366745cd3eb763954ba2d221e22891577a41
 
-_The repo includes JavaScript and Solidity reference implementations, a shared Rust core with Solana and CosmWasm adapters, and native ports for Aptos Move, Starknet (Cairo), and Sui Move._
+Epoch:             1
+Seed:              0x3bd8365c9b162c70d5084c746fe9505ec287c843326d47963e5f530931a2c912
+Generated values:  9, 2, 11, 5, 1, 8
+
+Epoch:             2
+Seed:              derived from previous epoch's seed
+Generated values:  unknown
+```
 
 ![Example permutation scatter plot](assets/permutation-scatter.svg)
 
